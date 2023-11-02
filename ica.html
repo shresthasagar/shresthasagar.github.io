@@ -226,23 +226,23 @@
           
           <p>Mathematically, we can represent this mixing like this:</p>
           <div>
-            <div class="equation" style="text-align: center;">
+            <div class="equation" style="text-align: center;" id="eq:x_1">
+              <!-- <a id="eq:x_1"></a> -->
               <div class="equation-content">
                 <span class="equation-text">
                   <span class="equation-text-item">\(x_1(t) = a_{11} s_1(t) + a_{12} s_2(t),\)</span>
                   <span class="equation-label" style="float: right;">(1)</span>
                 </span>
               </div>
-              <a id="eq:x_1"></a>
             </div>
             <div class="equation" style="text-align: center;">
+              <a id="eq:x_2"></a>
               <div class="equation-content">
                 <span class="equation-text">
                   <span class="equation-text-item">\(x_2(t) = a_{21} s_1(t) + a_{22} s_2(t),\)</span>
                   <span class="equation-label" style="float: right;">(2)</span>
                 </span>
               </div>
-              <a id="eq:x_2"></a>
             </div>
           </div>
           <br/>
@@ -267,22 +267,22 @@
         <p>Before we delve further, let's make a subtle adjustment to our equations:</p>
         <div>
           <div class="equation" style="text-align: center;">
+            <a id="eq:x_one_var"></a>
             <div class="equation-content">
               <span class="equation-text">
                 <span class="equation-text-item">\(x_1 = a_{11} s_1 + a_{12} s_2,\)</span>
                 <span class="equation-label" style="float: right;">(3a)</span>
               </span>
             </div>
-            <a id="eq:x_1_var"></a>
           </div>
           <div class="equation" style="text-align: center;">
+            <a id="eq:x_two_var"></a>
             <div class="equation-content">
               <span class="equation-text">
                 <span class="equation-text-item">\(x_2 = a_{21} s_1 + a_{22} s_2,\)</span>
                 <span class="equation-label" style="float: right;">(3b)</span>
               </span>
             </div>
-            <a id="eq:x_2_var"></a>
           </div>
         </div>
         <br/>
@@ -338,9 +338,9 @@
             </div>
           </div>
         </div>
-        
+        <br/>
         <p>Take a close look at those <span style="color: blue;">blue</span> and <span style="color: red;">red</span> points; they're not just random dots. They happen to be the corners in the plot of \(x_1\) and \(x_2\). But here's the fascinating part: <span style="color: blue;">blue</span> corresponds to <span style="color: blue;">\((x_1, x_2) = (a_{11}, a_{21})\)</span>, and <span style="color: red;">red</span> corresponds to <span style="color: red;">\((x_1, x_2) = (a_{21}, a_{22})\)</span>.</p>
-        <p>This means that if our sound sources were random numbers (like spinning a wheel), and we could somehow pinpoint these special corner points from our recordings, we'd be able to figure out the exact values of \(a_{11}, a_{12}, a_{21},\) and \(a_{22}\)! By plugging these values into Eq. <a href="#eq:x_1">(1)</a> and <a href="#eq:x_2">(2)</a>, we'd obtain two equations with two unknowns--a classic system of linear equations!</p>
+        <p>This means that if our sound sources were random numbers (like spinning a wheel), and we could somehow pinpoint these special corner points from our recordings, we'd be able to figure out the exact values of \(a_{11}, a_{12}, a_{21},\) and \(a_{22}\)! By plugging these values into Eq. <a href="#eq:x_one_var">(3a)</a> and <a href="#eq:x_two_var">(3b)</a>, we'd obtain two equations with two unknowns--a classic system of linear equations!</p>
         </div>
       </section>
       
@@ -486,6 +486,13 @@
         </p>
         <p>This extraction process effectively separates and recovers the original sources from the mixed recordings.</p>
         </section>
+        
+        <br/>
+        <h2>Conclusion</h2>
+        <p>If you have made it to this point, you hopefully understand the problem of ICA, basic assumptions for solving ICA, and a basic algorithm for solving ICA.  If you are interested in exploring further and going deeper into this problem, you can explore an accessible paper that delves into the subject <a href='#hyvarinen1999independent'>[3]</a>.
+          This understanding can also serve as a solid foundation for delving into more intricate and general tasks in the fields of machine learning and AI, including nonlinear ICA, latent variable models, disentanglement, and other key elements of the deep learning domain. Enjoy your exploration!
+          <!-- If you are interested in machine learning and AI, this understanding can provide foundation for more complex and general tasks such as nonlinear ICA, latent variable models, disentanglement, etc which are cornerstones of deep learning field. Enjoy your exploration!   -->
+        </p>
 
         <br/>
         <h2>References</h2>
@@ -504,9 +511,6 @@
           <div id="clt_wiki" style="margin-bottom: 10px;">
             <p>[4] "Central Limit Theorem." <em>Wikipedia, Wikimedia Foundation</em>, 25 Oct. 2023, en.wikipedia.org/wiki/Central_limit_theorem.</p>
           </div>
-
-
-
 
         </article>
         </div>
