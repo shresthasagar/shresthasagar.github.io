@@ -1,0 +1,9 @@
+@article{shrestha2023optimal,
+  title={Optimal solutions for joint beamforming and antenna selection: From branch and bound to graph neural imitation learning},
+  author={Shrestha, Sagar and Fu, Xiao and Hong, Mingyi},
+  journal={IEEE Transactions on Signal Processing (TSP)},
+  volume={71},
+  pages={831--846},
+  year={2023},
+  publisher={IEEE}
+}

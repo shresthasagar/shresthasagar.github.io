@@ -1,0 +1,11 @@
+@ARTICLE{shrestha2023communication,
+  author={Shrestha, Sagar and Fu, Xiao},
+  journal={IEEE Transactions on Signal Processing}, 
+  title={Communication-Efficient Federated Linear and Deep Generalized Canonical Correlation Analysis}, 
+  year={2023},
+  volume={71},
+  number={},
+  pages={1379-1394},
+  doi={10.1109/TSP.2023.3265886}
+}
+

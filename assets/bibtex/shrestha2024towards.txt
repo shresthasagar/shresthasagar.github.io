@@ -1,0 +1,6 @@
+@article{shrestha2024towards,
+  title={Towards Identifiable Unsupervised Domain Translation: A Diversified Distribution Matching Approach},
+  author={Shrestha, Sagar and Fu, Xiao},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}

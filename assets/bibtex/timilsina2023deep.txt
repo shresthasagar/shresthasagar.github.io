@@ -1,0 +1,10 @@
+@article{shrestha2022deep,
+  title={Quantized Radio Map Estimation Using Tensor and Deep Generative Models},
+  author={Timilsina, Subash and Shrestha, Sagar and Fu, Xiao},
+  journal={IEEE Transactions on Signal Processing (TSP)},
+  volume={70},
+  pages={1170--1184},
+  year={2023},
+  publisher={IEEE}
+}
+

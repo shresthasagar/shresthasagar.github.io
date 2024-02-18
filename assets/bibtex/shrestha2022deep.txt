@@ -1,0 +1,10 @@
+@article{shrestha2022deep,
+  title={Deep spectrum cartography: Completing radio map tensors using learned neural models},
+  author={Shrestha, Sagar and Fu, Xiao and Hong, Mingyi},
+  journal={IEEE Transactions on Signal Processing (TSP)},
+  volume={70},
+  pages={1170--1184},
+  year={2022},
+  publisher={IEEE}
+}
+
