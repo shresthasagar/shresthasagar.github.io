@@ -213,12 +213,12 @@
       <br/>
 
       
-      <p>Recently, a series of concurrent works, <b>Flow matching</b> <a href='#lipman2023flow'>(Lipman et al., 2023)</a>, <b>Rectified Flow</b> <a href='#liu2023flow'>(Liu et al., 2023)</a>, and <b>Stochastic Interpolants</b> <a href='#albergo2023building'>(Albergo et al., 2023)</a>, proposed a new class of generative model based on <em>Continuous Normalizing Flow</em> (CNF), which we will refer to as <em>Flow Matching</em> (FM) based models. In principle, FM is a much flexible alternative to the current state-of-the-art <em>Diffusion Models</em> (DMs), and can be viewed as a generalization of diffusion models in two important ways: 
+      <p>Recently, a series of concurrent works, <b>Flow matching</b> <a href='#lipman2023flow'>(Lipman et al., 2023)</a>, <b>Rectified Flow</b> <a href='#liu2023flow'>(Liu et al., 2023)</a>, and <b>Stochastic Interpolants</b> <a href='#albergo2023building'>(Albergo et al., 2023)</a>, proposed a new class of generative model based on <em>Continuous Normalizing Flow</em> (CNF), which we will refer to as <em>Flow Matching</em> (FM) based models. In principle, FM is a more flexible alternative to the current state-of-the-art <em>Diffusion Models</em> (DMs), and can be viewed as a generalization of DMs in two important ways: 
         <ul>
           <li> <b>Trasport between arbitrary distributions:</b>
             <br/>DM requires the base probability distribution to be Gaussian. FM allows base distribtion to be any arbitrary distribution (e.g., image distribution). This can enable many applications such as image-to-image translations.</li>
           <li><b>Arbitrary probability paths:</b><br/>
-            Path followed by DM is just one of the infinitely many possible probability paths that could be attained using FM models. This is important because it allows for flexible application-specific designs of probability paths such as optimal transport path. </li>
+            Path followed by DM is just one of the infinitely many possible probability paths that could be attained using FM models. This is important because it allows for flexible, application-specific designs of probability paths such as optimal transport path. </li>
         </ul>
       </p>
       
@@ -254,15 +254,15 @@
 
       <h3>Mass Continuity Equation</h3>
       <p>
-        The velocity field \(v_t\) results in the probability path \(p_t\) if and only if it satisfies the <em>mass continuity equation</em>:
+        A velocity field \(v_t\) results in the probability path \(p_t\) if and only if it satisfies the <em>mass continuity equation</em>:
         \[
-        \frac{\partial p_t}{\partial t} + \nabla \cdot (p_t v_t) = 0
+        \frac{\partial p_t}{\partial t} + \nabla \cdot (p_t v_t) = 0.
         \]
-        This equation ensures the conservation of probability mass along the path.
+        This equation follows from Gauss's divergence theorem by enforcing probability mass conservation. Basically, one can use this equation to verify if a vector field \(v_t\) generates a given probability path \(p_t\), or to even find such a vector field (which is what we will do).
 
       <h2>Flow Matching (FM)</h2>
       <p>
-        Given a probability density path \(p_t\) with \(p_0 = \rho_0 \) and corresponding vector field \(u_t\), the flow matching objective is to minimize the following loss function:
+        Given a probability density path \(p_t\) with \(p_0 = \rho_0, ~p_1 = \rho_1 \), and corresponding vector field \(u_t\), the flow matching objective is to minimize the following loss function:
         \[
         \mathcal{L}_{\rm FM}(v_t) = \mathbb{E}_{t \sim \mathcal{U}([0,1]), x \sim p_t} \|v_t(x) - u_t(x)\|^2.
         \]
@@ -278,7 +278,7 @@
         A typical example of \(I_t\) is the linear interpolant:
         \[ I_t(x_0, x_1) = (1-t)x_0 + tx_1.\]
 
-        Next, we consider a <em>joint distribution</em> (coupling) \(\rho(x_0, x_1)\) such that 
+        Next, a <em>joint distribution</em> (coupling) \(\rho(x_0, x_1)\) is chosen such that 
         \[ \int \rho(x_0, x_1) dx_0  = \rho_1(x_1), ~ \text{and } ~  \int \rho(x_0, x_1) dx_1  = \rho_0(x_0).\]
         The independent coupling \( \rho(x_0, x_1) = \rho_0(x_0)\rho_1(x_1)\) is a special example that satisfies the above conditions.
 
@@ -286,11 +286,12 @@
         \[
         \mathcal{L} =  \mathbb{E}_{t, (x_0,x_1) \sim \rho(x_0,x_1), x = I_t(x_0,x_1)} \left\|v_t(x) - \frac{\partial}{\partial t}I_t(x_0,x_1) \right\|^2
         \]
-        For the linear interpolant \(I_t(x_0,x_1) = (1-t)x_0 + tx_1\), the above objective becomes:
+        For the linear interpolant \(I_t(x_0,x_1) = (1-t)x_0 + tx_1\) and independent coupling the above objective becomes:
         \[
-        \mathcal{L} =  \mathbb{E}_{t, (x_0,x_1) \sim \rho(x_0,x_1), x = (1-t)x_0 + tx_1} \left\|v_t(x) - (x_1 - x_0) \right\|^2
+        \mathcal{L} =  \mathbb{E}_{t, x_0 \sim \rho_0, x_1 \sim \rho_1, x = (1-t)x_0 + tx_1} \left\|v_t(x) - (x_1 - x_0) \right\|^2
         \]
-        The following section will guide you through the derivation of the above objective.
+        The above objective is very simple to implement: one just needs to randomly sample a \(x_0\) and \(x_1\) from the two datasets, a time stamp and regress the vector field at \(I_t(x_0,x_1)\) with a vector pointing from \(x_0\) to \(x_1\). At first glance, it almost seems too simple and naive: how can matching the vector field with random directions recover the desired vector field \(u_t\)? The short answer is that, in expectation, these random directions will recover the desired vector field \(u_t\). To understand why this is the case, the following
+        section will guide you through the detailed proof.
       </p>
 <!-- 
 
@@ -368,7 +369,7 @@
        -->
 
       <h2> Proof: </h2>
-        In previous section, we discussed that the flow matching objective \(\mathcal{L}_{\rm FM}\) is intractable due to two reasons: (i) sampling from \(p_t\) and (ii) estimating \(u_t\). In this section, we will discuss how addressing these two issues results in the tractable flow matching objective \(\mathcal{L}\).
+        In previous section, we discussed that the flow matching objective \(\mathcal{L}_{\rm FM}\) is intractable due to two reasons: (i) sampling from \(p_t\) and (ii) estimating \(u_t\). In this section, we will discuss how addressing these two issues results in the tractable and simple flow matching objective \(\mathcal{L}\).
         <h4>(i) Sampling from \(p_t\)</h4>
 
         Then, \(x_t = I_t(x_0,x_1)\) defines a stochastic process \(x_t\) (hence called <em>stochastic interpolant</em>), given samples from \((x_0,x_1) \sim \rho(x_0,x_1)\). Probability path \(p_t\) induced by \(x_t\) is a valid time dependent probability path for constructing a CNF because when \( (x_0,x_1) \sim \rho(x_0,x_1)\),
