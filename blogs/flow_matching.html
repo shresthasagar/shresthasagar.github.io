@@ -198,13 +198,16 @@
             Path followed by DM is just one of the infinitely many possible probability paths that could be attained using FM models. This is important because it allows for flexible, application-specific designs of probability paths such as optimal transport path. </li>
         </ul>
       </p>
-      
+
+      <b>Note</b>: The blog assumes some familiarity with the problem of generative modeling, probability theory, basic differential equations, and diffusion models.
+      <!-- <b>Problem Description</b>: The goal of generative models is to learn a probability distribution \(p\) from a dataset \(\mathcal{D}\) that follows some unknown underlying distribution \(\rho_1\) such that \(p \approx \rho_1\). The learnt \(p\) can then be used to synthesize new samples that are indistinguishable from samples from the dataset \(\mathcal{D}\).  -->
+
       <h2>Normalizing Flow</h2>
-      <p>A flow model aims to transport a base distribution \(\rho_0\) into a target distribution \(\rho_1\) defined over \(\mathbb{R}^d\), using a transport map \(\Psi: \mathbb{R}^d \to \mathbb{R}^d\), i.e.,
+      <p>FM can be seen as a subclass of the general flow based generative models. A flow model aims to transport a base distribution \(\rho_0\) to a target distribution \(\rho_1\), both defined over \(\mathbb{R}^d\), using a transport map \(\Psi: \mathbb{R}^d \to \mathbb{R}^d\), i.e.,
         \[
-        \text{If } x_0 \sim \rho_0, \quad \Psi(x_0) \sim \rho_1
+        \text{if } x_0 \sim \rho_0, \text{ then } \quad \Psi(x_0) \sim \rho_1.
         \]
-      A popular framework, called the <em>Normalizing Flow</em>, learns such a transport map \(\Psi\) using maximum likelihood objective to learn a data distribution \(\rho_1\) by fixing the base distribution \(\rho_0\) to be a simple distribution, e.g., Gaussian, that is amenable to easy sampling and density evaluation. The objective of normalizing flow is as follows:
+      A popular framework, called the <em>Normalizing Flow</em>, learns such a transport map \(\Psi\) using maximum likelihood objective to learn a data distribution \(\rho_1\) by fixing the base distribution \(\rho_0\) to be a simple distribution, e.g., Gaussian, that is amenable to easy sampling and density evaluation. The objective of normalizing flow follows from the change of variable formula for probability density function as shown below:
       \[
       \max_{\Psi} \quad \mathbb{E}_{x \sim \rho_1} \log p_{\Psi}(x):= \log \rho_0(\Psi^{-1}(x)) + \log |\det J_{\Psi^{-1}}(x)|
       \]
@@ -214,7 +217,7 @@
       <h2>Continuous Normalizing Flow (CNF)</h2>
       <p>
       CNF uses a continuous time perspective of the aforementioned transport process. Consider a continuous time dependent map \(\Psi_t\) for \(t \in [0,1]\) such that \([\Psi_1]_{\# \rho_0} = \rho_1\) and \([\Psi_0]_{\# \rho_0} = \rho_0\), 
-      a <em>time-dependent velocity field</em>, \(v_t:\times \mathbb{R}^d \to \mathbb{R}^d\), and corresponding <em>time-dependent probability path</em> \(p_t:\times \mathbb{R}^d \to \mathbb{R}_{>0}\). The vector field \(v_t\) is related to the transport map \(\Psi_t\) via the following ordinary differential equation (ODE):
+      a <em>time-dependent velocity field</em>, \(v_t: \mathbb{R}^d \to \mathbb{R}^d\), and corresponding <em>time-dependent probability path</em> \(p_t: \mathbb{R}^d \to \mathbb{R}_{>0}\). The vector field \(v_t\) is related to the transport map \(\Psi_t\) via the following ordinary differential equation (ODE):
       \[
       \frac{d}{dt} \Psi_t(x) = v_t(\Psi_t(x)).
       \]
