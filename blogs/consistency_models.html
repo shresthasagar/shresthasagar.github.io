@@ -188,7 +188,26 @@
       <br/>
       <br/>
 
+      <p>Recently popular generative models, such as diffusion and flow matching, require several steps of simulation in order to sample data during test time. This is due to the fact that they learn some vector field (or variation thereof, such as score function) between the source and the target distribution. This slow sampling process is a major computational bottleneck for these models in applications such as image and video generation. 
       
+      To address this issue, several methods have been proposed to speed up the sampling process, either by distillation of pretrained models [X], smart sampling procedures [X], or standalone generative models [X]. Consistency models are standalone generative models that enables one-step or few-step sampling from the 
+
+      </p>
+
+      <b>Table of Contents</b>
+      <ul>
+        <li>Diffusion and Flow matching</li>
+        <li>Consistency Model</li>
+        <li>Practical Implementation</li>
+        <li>Multi-step Consistency Model</li>
+        <li>Conclusion</li>
+      </ul>
+
+
+
+      <p>Consistency models are a family of generative models </p>
+
+
       <p>Recently, a series of concurrent works, <b>Flow matching</b> <a href='#lipman2023flow'>(Lipman et al., 2023)</a>, <b>Rectified Flow</b> <a href='#liu2023flow'>(Liu et al., 2023)</a>, and <b>Stochastic Interpolants</b> <a href='#albergo2023building'>(Albergo et al., 2023)</a>, proposed a new class of generative model based on <em>Continuous Normalizing Flow</em> (CNF), which we will refer to as <em>Flow Matching</em> (FM) based models. In principle, FM is a more flexible alternative to the current state-of-the-art <em>Diffusion Models</em> (DMs), and can be viewed as a generalization of DMs in two important ways: 
         <ul>
           <li> <b>Trasport between arbitrary distributions:</b>

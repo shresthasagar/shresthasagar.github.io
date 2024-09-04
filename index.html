@@ -167,7 +167,7 @@
 
               <p >
                 I am a 4th year PhD student in Computer Science at Oregon State University (OSU) advised by Dr. <a href="https://web.engr.oregonstate.edu/~fuxia/" target="_blank" rel="noopener">Xiao Fu</a>. 
-                My research is focused on understanding and designing principled methods for unsupervised domain translation, generative models, and multiview learning. 
+                My research is focused on understanding and designing principled methods for unsupervised domain translation, generative models, and multiview/multimodal learning. 
                 <!-- My research interests are in the general field of machine learning, with a focus on understanding and designing principled methods for deep unsupervised/self-supervised learning, multimodal learning, and domain adaptation. I am also interested in and have worked on the intersection of optimization, machine learning, and signal processing.  -->
 
               </p>
@@ -175,7 +175,9 @@
                 Prior to my PhD, I received my MS in Computer Science from OSU in 2023, also advised by Dr. Xiao Fu. During my MS, I developed efficient and principled ML methods for important problems in wireless communications and federated learning. The work was funded jointly by Intel and NSF under the <a href='https://www.nsf.gov/pubs/2019/nsf19591/nsf19591.htm'>Machine Learning for Wireless Networking Systems (MLWiNS)</a> program.
               </p>
               <p>
-                Before joining OSU, I co-founded <a href="www.paailatechnology.com" target="_blank" rel="noopener">Paaila Technology</a>, where I led the development of <a href="https://www.youtube.com/watch?v=ib88ES7M7L0" target="_blank" rel="noopener">service robots</a>, <a href="https://everestbankltd.com/" target="_blank" rel="noopener">bank assistant chatbot</a>, and <a href="https://kathmandupost.com/science-technology/2020/05/12/after-interactive-humanoids-this-lalitpur-based-start-up-is-developing-ventilators" target="_blank" rel="noopener">emergency ventilators</a> and <a href="https://www.youtube.com/watch?v=MF2TFJ7Ti_M" target="_blank" rel="noopener">medicine delivery robot</a>. I also worked as an instructor at <a href="https://tcioe.edu.np/" target="_blank" rel="noopener">Thapathali Campus, Tribhuvan University</a> for two semesters teaching undergraduate courses: "Instrumentation Systems" and "Telecommunications". 
+                Before joining OSU, I co-founded <a href="www.paailatechnology.com" target="_blank" rel="noopener">Paaila Technology</a>, where I led the development of <a href="https://www.youtube.com/watch?v=ib88ES7M7L0" target="_blank" rel="noopener">waiter robots</a> and <a href="https://everestbankltd.com/" target="_blank" rel="noopener">banking assistant chatbot</a>.
+                <!-- , and <a href="https://kathmandupost.com/science-technology/2020/05/12/after-interactive-humanoids-this-lalitpur-based-start-up-is-developing-ventilators" target="_blank" rel="noopener">emergency ventilators</a> and <a href="https://www.youtube.com/watch?v=MF2TFJ7Ti_M" target="_blank" rel="noopener">medicine delivery robot</a>.  -->
+                <!-- I also worked as an instructor at <a href="https://tcioe.edu.np/" target="_blank" rel="noopener">Thapathali Campus, Tribhuvan University</a> for two semesters teaching undergraduate courses: "Instrumentation Systems" and "Telecommunications".  -->
                 <!-- Prior to OSU, I co-founded a robotics startup  -->
               </p>
               <p>During my undergraduate study, I was a team member of Team Nepal for <a href="https://en.wikipedia.org/wiki/ABU_Robocon" target="_blank" rel="noopener">ABU Robocon</a> 2015 and 2016, where my team won <a href="https://robotics.pcampus.edu.np/index.php/awards/" target="_blank" rel="noopener">many awards</a>.</p>
@@ -248,8 +250,8 @@
             <h2><b>Select Publications</b></h2>
             </br>
           </div>
-
-
+          
+          
           <div style="padding-bottom: 60px;">
             <div class="row">
               
@@ -265,18 +267,44 @@
                 <p><i>International Conference on Learning Representations (<b>ICLR</b>) 2024 </i></p>
                 <p align="justify">
                 Unsupervised domain translation is the problem of learning a mapping between two domains without paired data. Existing methods (e.g. CycleGAN and follow-up works) generally tackle the problem with distribution matching objectives. A fundamental issue with these approaches is the the "non-identifiability" of translation maps due to the existence of multiple solutions. This results in "content-misaligned" translations in practice. Our work proposes a simple yet provable solution to address this issue. We reveal interesting insights into the nature of the UDT problem. The proposed identifiable solution is demonstrated to be effective in avoiding the content-misalignment issue.
+              </p>
+              <div class="center">
+                <p>
+                  <a class="link" href="https://arxiv.org/abs/2401.09671">Paper</a> |
+                  <a class="link" href="assets/bibtex/shrestha2024towards.txt">Bibtex</a> |
+                  <a class="link" href="https://github.com/XiaoFuLab/Identifiable-Unsupservised-Domain-Translation">Code</a>
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="padding-bottom: 60px;">
+            <div class="row">
+              
+
+              <div class="col-lg-4 profile center">
+                <img src="assets/paper_figures/oct_results.png" height="400" width="400" alt="OCT Super-Resolution">
+              </div>
+              <div class="col-lg-8">
+                <div class="paper-title">Translation Identifiability-Guided Unsupervised Cross-Platform Super-Resolution for OCT Images</div>
+                <p class="blue">
+                  Jiahui Song*, <b>Sagar Shrestha*</b>, Xueshen Li, Yu Gan, and Xiao Fu (<b>* Equal Contribution</b>)
+                </p>
+                <p><i>IEEE SAM Workshop 2024</i></p>
+                <p align="justify">
+                  Optical Coherence Tomography (OCT) provides detailed cross-sectional images of coronary arteries, but cost-effective systems produce only low-resolution images. Unsupervised OCT super-resolution (OCT-SR) offers a solution without requiring high-resolution systems or paired images. Existing methods use CycleGAN, which lacks translation identifiability, leading to incorrect results. Our work proposes a translation identifiability-guided framework using a diversified distribution matching module. This approach guarantees OCT translation identifiability under reasonable conditions with a simple learning loss. Results show our framework matches or exceeds state-of-the-art performance while requiring fewer resources such as annotations, computation time, and memory.
                 </p>
                 <div class="center">
                   <p>
-                    <a class="link" href="https://arxiv.org/abs/2401.09671">Paper</a> |
-                    <a class="link" href="assets/bibtex/shrestha2024towards.txt">Bibtex</a> |
-                    <a class="link" href="https://github.com/XiaoFuLab/Identifiable-Unsupservised-Domain-Translation">Code</a>
+                    <a class="link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10636686">Paper</a> | 
+                    <a class="link" href="assets/bibtex/song2024translation.txt">Bibtex</a> |
+                    <!-- <a class="link" href="https://github.com/XiaoFuLab/Identifiable-Unsupervised-OCT-SR">Code</a> -->
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
           <div style="padding-bottom: 60px;">
             <div class="row">
               <div class="col-lg-4 profile center">
@@ -564,7 +592,16 @@
                   href="https://doi.org/https://doi.org/10.31219/osf.io/r2e7a" target="_blank" rel="noopener">DOI</a>
               </div>
             </div> -->
-            
+            <div class="card-simple view-card">
+              <div><span class="article-date article-metadata">Sept 3, 2024</span>
+              </div>
+              <div class="paper-title mb-1 mt-3"><a href="blogs/optimal_sol_flow_diff.html">Optimal Solutions for Diffusion and Flow Matching Objectives</a></div>
+              <div class="article-style">
+                <p>A short note on understanding the diffusion and flow matching objectives and their solutions.</p>
+              </div>
+            </div>
+
+
             <div class="card-simple view-card">
               <div><span class="article-date article-metadata">June 28, 2024</span>
               </div>

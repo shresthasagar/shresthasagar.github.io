@@ -1,0 +1,11 @@
+@inproceedings{10636686,
+  author={Song, Jiahui and Shrestha, Sagar and Li, Xueshen and Gan, Yu and Fu, Xiao},
+  booktitle={2024 IEEE 13rd Sensor Array and Multichannel Signal Processing Workshop (SAM)}, 
+  title={Translation Identifiability-Guided Unsupervised Cross-Platform Super-Resolution for OCT Images}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Annotations;Optical coherence tomography;Superresolution;Optical imaging;Optical sensors;Task analysis;Optical signal processing;Optical coherence tomography;Cross-platform super-resolution;CycleGAN;Identifiability},
+  doi={10.1109/SAM60225.2024.10636686}
+}
