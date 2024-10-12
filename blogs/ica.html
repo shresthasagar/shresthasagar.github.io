@@ -10,20 +10,23 @@
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
 
+  <!-- Preconnect and preload fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link rel="preload" as="style" href="../assets/css2.css">
   <link rel="stylesheet" href="../assets/css2.css" media="all" onload='this.media="all"'>
-
-  <link rel="stylesheet" href="../assets/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="all"
-    onload='this.media="all"'>
-  <link rel="stylesheet" href="../assets/academicons.min.css"
-    integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
-    crossorigin="anonymous" media="all" onload='this.media="all"'>
+  
+  <!-- Load necessary stylesheets -->
+  <link rel="stylesheet" href="../assets/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="all" onload='this.media="all"'>
+  <link rel="stylesheet" href="../assets/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="all" onload='this.media="all"'>
   <link rel="stylesheet" href="../assets/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css">
-  <link rel="stylesheet" href="../assets/github-light.min.css" title="hl-light" media="all" onload='this.media="all"'>
 
-  <link rel="stylesheet" href="../assets/dracula.min.css" title="hl-dark" media="print" onload='this.media="all"' disabled="">
+  <!-- Use only the light theme stylesheet -->
+  <link rel="stylesheet" href="../assets/github-light.min.css" title="hl-light" media="all">
 
+  <!-- Remove or disable the dark theme stylesheet -->
+  <!-- <link rel="stylesheet" href="../assets/dracula.min.css" title="hl-dark" media="print" disabled=""> -->
+
+  <!-- Meta tags and other head content -->
   <meta name="author" content="Sagar Shrestha">
   <meta name="description" content="The personal academic website of social scientist Sagar Shrestha.">
   <link rel="alternate" hreflang="en-us" href="https://thomasgultzow.com/">
@@ -52,13 +55,13 @@
   <script src="../assets/netlify-identity-widget.js"></script>
   <link rel="alternate" href="https://shresthasagar.github.io/index.xml" type="application/rss+xml" title="Sagar Shrestha">
   <script src="https://kit.fontawesome.com/b4dfb6d676.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script> -->
+  <!-- MathJax for rendering LaTeX equations -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <title>Shrestha Blogs</title>
 
+  <!-- Custom styles -->
   <style type="text/css">
     .medium-zoom-overlay {
       position: fixed;
@@ -105,8 +108,11 @@
   <!-- <link rel="prefetch" href="https://thomasgultzow.com/"> -->
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper" style="font-size: 18px;">
-  <script src="../assets/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper" data-theme="light" style="font-size: 18px;">
+  <!-- Initialization script -->
+  <!-- Remove or adjust any initialization scripts that enforce dark mode -->
+  <!-- If necessary, modify the wowchemy-init script to enforce light theme -->
+  <!-- <script src="../assets/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script> -->
   <aside class="search-modal" id="search">
     <div class="container">
       <section class="search-header">
@@ -257,7 +263,7 @@
 
           <p>Now, considering Eq. (<a href="#eq:x_1">1</a>) and (<a href="#eq:x_2">2</a>), how can we retrieve the values of \(s_1(t)\) and \(s_2(t)\)? It seems like we have a system of linear equations here—two equations and two unknowns. However, let's take a moment to ponder. What are the values of \(a_{11}, a_{12}, a_{21},\) and \(a_{22}\)? As it turns out, all the variables on the right-hand side of equations (<a href="#eq:x_1">1</a>) and (<a href="#eq:x_2">2</a>) are also unknowns.</p>
 
-          <p>Is it even possible to solve this problem? There are two equations but six unknowns. Can we add more equations, i.e., add more microphones and turn it into a familiar linear programming problem? Unfortunately, it's not that straightforward. Adding more microphones would give rise to even more unknowns, e.g., \(a_{31}\), \(a_{32}\). In fact, generally, this problem remains unsolvable without additional insights. In ICA, we introduce a critical piece of information—a fundamental assumption about the nature of the sound sources. Specifically, we assume that the sound sources are "independent" of each other.</p>
+          <p>Is it even possible to solve this problem? There are two equations but six unknowns. Can we add more equations, i.e., add more microphones and turn it into a familiar linear programming problem? Unfortunately, it's not that straightforward. Adding more microphones would give rise to even more unknowns, e.g., \(a_{31}\), \(a_{32}\). In fact, generally, this problem remains unsolvable without additional insights. In ICA, we introduce a critical piece of information—a fundamental assumption about the nature of the sound sources.</p>
           
           <p>To put it simply, the independence assumption means that the sound sources operate without influencing one another. For instance, if the sound sources represent different conversations, this assumption implies that one conversation doesn't interfere with the other, which seems reasonable.</p>
         </div>
@@ -581,6 +587,14 @@
     id="netlify-identity-widget" title="Netlify identity widget"
     style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; "
     src="../assets/a.html"></iframe>
+
+  <!-- Include a script to enforce light theme if necessary -->
+  <script>
+    // Ensure the theme is set to light
+    if (document.body) {
+      document.body.setAttribute('data-theme', 'light');
+    }
+  </script>
 </body>
 
 </html>

@@ -52,9 +52,21 @@
   <title>Sagar Shrestha</title>
 
   <style type="text/css">
+    body {
+      background-color: #fff !important; /* Force background to white */
+      color: #000 !important;             /* Force text color to black */
+    }
     p {
       font-size: 17px;
       text-align: justify;
+    }
+
+    /* Override dark mode preferences */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #fff !important;
+        color: #000 !important;
+      }
     }
 
     .medium-zoom-overlay {
@@ -111,7 +123,8 @@
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main"  style="font-size: 18px;">
 <div>
-  <script src="assets/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+  <!-- Comment out scripts that might switch themes -->
+  <!-- <script src="assets/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script> -->
   <div class="page-header header--fixed">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
@@ -557,11 +570,23 @@
               </div>
             </div> -->
             <div class="card-simple view-card">
+              <div><span class="article-date article-metadata">Oct 4, 2024</span>
+              </div>
+              <div class="paper-title mb-1 mt-3"><a href="blogs/unified_perspective_fm_diffusion.html">Unified Perspective on Diffusion and Flow Matching</a></div>
+              <div class="article-style">
+                <p>A note on how to view flow matching and diffusion under the same framework, resulting in great flexibility in designing probability path, training score or vector field, and sampling using SDE or ODE.</p>
+              <img src="assets/images/blogs/sol_fm_diff/combined_ode_sde.gif" alt="SDE sampling Visualization" style="width:100%; max-width: 100%; display:block; margin:auto;" loop autoplay>
+              </div>
+            </div>
+
+            <div class="card-simple view-card">
               <div><span class="article-date article-metadata">Sept 3, 2024</span>
               </div>
               <div class="paper-title mb-1 mt-3"><a href="blogs/optimal_sol_flow_diff.html">Optimal Solutions for Diffusion and Flow Matching Objectives</a></div>
               <div class="article-style">
                 <p>A short note on understanding the diffusion and flow matching objectives and their solutions.</p>
+              <img src="assets/images/blogs/sol_fm_diff/diffusion_results.png" alt="Diffusion Objective" style="width: 80%; height: auto;">
+
               </div>
             </div>
 
@@ -572,6 +597,7 @@
               <div class="paper-title mb-1 mt-3"><a href="blogs/vision_language_models.html">Vision Language Representation Learning</a></div>
               <div class="article-style">
                 <p> A brief survey into joint representation learning of text and images.</p>
+                <img src="assets/images/blogs/vlm/clip.png" alt="CLIP Architecture" style="width: 100%; display: inline-block;"/>
               </div>
             </div>
               
@@ -581,6 +607,8 @@
               <div class="paper-title mb-1 mt-3"><a href="blogs/flow_matching.html">Understanding Flow Matching-based Generative Models</a></div>
               <div class="article-style">
                 <p> A distilled explanation of the flow matching / stochastic interpolant /rectified flow. It features an easy-to-follow proof (not found in original paper) of the flow-matching objective with stochastic interpolants.</p>
+              <img src="assets/images/blogs/fm/fm_illus.png" alt="Samples from s" style="width: 80%; height: auto;"/>
+
               </div>
             </div>
               
@@ -588,9 +616,11 @@
               <div class="article-metadata"><span class="article-date">October 29, 2023</span>
               </div>
               <div class="paper-title mb-1 mt-3"><a href="blogs/ica.html">A High Schooler's Guide to Independent Component Analysis</a>
+                
               </div>
               <div class="article-style">
                 <p> A beginner's introduction to ICA.</p>
+                <img src="assets/images/blogs/ica/bss_illus.png" alt="Independent Component Analysis" style="width: 70%; "/>
               </div>
             </div>
         </div>
@@ -639,10 +669,10 @@
       </div>
     </div>
   </div>
-  <script src="assets/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script><iframe
+  <!-- <script src="assets/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script><iframe
     id="netlify-identity-widget" title="Netlify identity widget"
     style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; "
-    src="assets/a.html"></iframe>
+    src="assets/a.html"></iframe> -->
 </div>
 <footer>
   <div class="container">
