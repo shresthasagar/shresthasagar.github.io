@@ -1,0 +1,6 @@
+@article{timilsina2024identifiable,
+  title={Identifiable Shared Component Analysis of Unpaired Multimodal Mixtures},
+  author={Timilsina, Subash and Shrestha, Sagar and Fu, Xiao},
+  journal={arXiv preprint arXiv:2409.19422},
+  year={2024}
+}
