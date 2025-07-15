@@ -1,0 +1,6 @@
+@article{shrestha2025content,
+  title={Content-Style Learning from Unaligned Domains: Identifiability under Unknown Latent Dimensions},
+  author={Shrestha, Sagar and Fu, Xiao},
+  journal={International Conference on Learning Representations},
+  year={2025}
+}

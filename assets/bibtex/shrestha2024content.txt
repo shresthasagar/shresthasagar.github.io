@@ -1,6 +1,6 @@
-@article{shrestha2024content,
-  title={Content-Style Learning from Unaligned Domains: Identifiability under Unknown Latent Dimensions},
+@article{shrestha2025diversified,
+  title={Diversified Flow Matching with Translation Identifiability},
   author={Shrestha, Sagar and Fu, Xiao},
-  journal={arXiv preprint arXiv:2411.03755},
-  year={2024}
+  journal={International Conference on Machine Learning},
+  year={2025}
 }
