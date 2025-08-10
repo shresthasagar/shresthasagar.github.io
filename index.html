@@ -1,208 +1,117 @@
 <!DOCTYPE html>
-<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: June 12, 2023 -->
-<html lang="en-us">
-
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="IE=edge">
-  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link rel="preload" as="style" href="assets/css2.css">
-  <link rel="stylesheet" href="assets/css2.css" media="all" onload='this.media="all"'>
-
-  <link rel="stylesheet" href="assets/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="all"
-    onload='this.media="all"'>
-  <link rel="stylesheet" href="assets/academicons.min.css"
-    integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
-    crossorigin="anonymous" media="all" onload='this.media="all"'>
-  <link rel="stylesheet" href="assets/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css">
-  <link rel="stylesheet" href="assets/github-light.min.css" title="hl-light" media="all">
-
-  <!-- Remove the dark mode stylesheet -->
-  <!-- <link rel="stylesheet" href="assets/dracula.min.css" title="hl-dark" media="print" onload='this.media="all"' disabled=""> -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The personal academic website of Sagar Shrestha - PhD Student in Computer Science at Oregon State University">
   <meta name="author" content="Sagar Shrestha">
-  <meta name="description" content="The personal academic website of Sagar Shrestha.">
-  <link rel="canonical" href="https://shresthasagar.github.io">
-  <meta name="theme-color" content="#fff">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:site" content="@ThomasGultzow">
-  <meta property="twitter:creator" content="@ThomasGultzow">
-  <meta property="twitter:image"
-    content="https://thomasgultzow.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="og:site_name" content="Sagar Shrestha">
-  <meta property="og:url" content="https://">
-  <meta property="og:title" content="Sagar Shrestha">
-  <meta property="og:description" content="The personal academic website of Sagar Shrestha.">
-  <meta property="og:image"
-    content="https://thomasgultzow.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:updated_time" content="2023-05-15T09:10:01+00:00">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://thomasgultzow.com?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://shresthasagar.github.io"}</script>
-  <script src="assets/netlify-identity-widget.js"></script>
-  <link rel="alternate" href="https://shresthasagar.github.io/index.xml" type="application/rss+xml" title="Sagar Shrestha">
-  <script src="https://kit.fontawesome.com/b4dfb6d676.js" crossorigin="anonymous"></script>
+    <title>Sagar Shrestha - Computer Science PhD Student</title>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 
-
-  <title>Sagar Shrestha</title>
-
-  <style type="text/css">
-    body {
-      background-color: #fff !important; /* Force background to white */
-      color: #000 !important;             /* Force text color to black */
-    }
-    p {
-      font-size: 17px;
-      text-align: justify;
-    }
-
-    /* Override dark mode preferences */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #fff !important;
-        color: #000 !important;
-      }
-    }
-
-    .medium-zoom-overlay {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity .3s;
-      will-change: opacity
-    }
-
-    .medium-zoom--opened .medium-zoom-overlay {
-      cursor: pointer;
-      cursor: zoom-out;
-      opacity: 1
-    }
-
-    .medium-zoom-image {
-      cursor: pointer;
-      cursor: zoom-in;
-      transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important
-    }
-
-    .medium-zoom-image--hidden {
-      visibility: hidden
-    }
-
-    .medium-zoom-image--opened {
-      position: relative;
-      cursor: pointer;
-      cursor: zoom-out;
-      will-change: transform
-    }
-
-    .paper-title {
-      font-family: Arial, sans-serif;
-      font-size: 24px;
-      /* font-weight: bold; */
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    .profile {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-  </style>
-  <!-- <link rel="prefetch" href="https://thomasgultzow.com/"> -->
 </head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main"  style="font-size: 18px;">
-<div>
-  <!-- Comment out scripts that might switch themes -->
-  <!-- <script src="assets/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script> -->
-  <div class="page-header header--fixed">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-        <!-- make the navbar fit in the middle 8 columns out of 12. And make all the list items align to the right -->
-        <div class="container-xl col-lg-8">
-          <div class="d-none d-lg-inline-flex"><a class="navbar-brand" href="https://shresthasagar.github.io">Sagar Shrestha</a></div><button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span><i class="fas fa-bars"></i></span></button>
-          <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand"
-              href="https://shresthasagar.github.io/">Sagar Shrestha</a></div>
-          <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-            <ul class="navbar-nav d-md-inline-flex">
-              <li class="nav-item"><a class="nav-link active" href="#about"
-                  data-target="#about"><span>About me</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#featured"
-                  data-target="#featured"><span>Research</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#blogs"
-                  data-target="#blogs"><span>Blogs</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="assets/cv.pdf" target="_blank"
-                  rel="noopener"><span>CV</span></a></li>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">Sagar Shrestha</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="assets/cv.pdf" class="nav-link" target="_blank">CV</a></li>
             </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
           </div>
         </div>
       </nav>
-    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="assets/sagar.jpg" alt="Sagar Shrestha" class="profile-image">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Sagar Shrestha</h1>
+                    <p class="hero-subtitle">
+                        PhD in CS | 
+                        <a href="https://oregonstate.edu/" target="_blank" rel="noopener">Oregon State University</a>
+                    </p>
+                    <p class="hero-description">
+                        Ex-Research Intern at 
+                        <a href="https://www.amazon.science/" target="_blank" rel="noopener">Amazon</a> &amp; 
+                        <a href="https://www.sra.samsung.com/" target="_blank" rel="noopener">Samsung</a>
+                    </p>
+                    <div class="social-links">
+                      <a href="https://scholar.google.com/citations?hl=en&user=qIBTvlAAAAAJ&view_op=list_works&sortby=pubdate" 
+                      class="social-link" target="_blank" aria-label="Google Scholar">
+                      <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://github.com/shresthasagar" 
+                    class="social-link" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                    <a href="mailto:shressag@oregonstate.edu" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                      <a href="https://www.linkedin.com/in/sagar-shrestha-7a658b10b" 
+                         class="social-link" target="_blank" aria-label="LinkedIn">
+                          <i class="fab fa-linkedin"></i>
+                      </a>
+                        <a href="https://twitter.com/ShresthaSgr" 
+                           class="social-link" target="_blank" aria-label="X (Twitter)">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
   </div>
-  
-  <div class="page-body"><span class="js-widget-page d-none"></span>
-    <section id="about" class="home-section">
-      <div class="home-section-bg"></div>
-      <div class="container col-lg-8">
-        <div class="row">
-          <div class="col-lg-4 d-flex justify-content-center">
-            <div id="profile"><img
-                src="assets/sagar.jpg" alt="Sagar Shrestha"
-                width="400" height="400">
-              <ul class="network-icon" aria-hidden="true">
-                <li><a href="mailto:shressag@oregonstate.edu" aria-label="envelope">
-                  <i class="fas fa-envelope big-icon"></i></a></li>  
-                <li><a href="https://scholar.google.com/citations?hl=en&user=qIBTvlAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"
-                    rel="noopener" aria-label="graduation-cap"><i class="fas fa-graduation-cap big-icon"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/sagar-shrestha-7a658b10b" target="_blank" rel="noopener"
-                    aria-label="linkedin"><i class="fab fa-linkedin big-icon"></i></a></li>
-                <li><a href="https://github.com/shresthasagar" target="_blank" rel="noopener" aria-label="github"><i
-                      class="fab fa-github big-icon"></i></a></li>
-                <li><a href="https://twitter.com/ShresthaSgr" target="_blank" rel="noopener" aria-label="twitter"><i
-                      class="fab fa-twitter big-icon"></i></a></li>
-              </ul>
             </div>
           </div>
-          <div class="col-lg-8">
-            <h2>About me</h2>
-            <div class="article-style">
-              <!--Align the text well-->
+    </section>
 
-              <p >
-                I am a 4th year PhD student in Computer Science at Oregon State University (OSU) advised by Dr. <a href="https://web.engr.oregonstate.edu/~fuxia/" target="_blank" rel="noopener">Xiao Fu</a>. 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a final year PhD student in Computer Science at Oregon State University (OSU) advised by Dr. 
+                    <a href="https://web.engr.oregonstate.edu/~fuxia/" target="_blank" rel="noopener">Xiao Fu</a>. 
                 My research is focused on understanding and designing principled methods for unsupervised domain translation, generative models, and multiview/multimodal learning. 
-                <!-- My research interests are in the general field of machine learning, with a focus on understanding and designing principled methods for deep unsupervised/self-supervised learning, multimodal learning, and domain adaptation. I am also interested in and have worked on the intersection of optimization, machine learning, and signal processing.  -->
-
+                </p>
+                <p>
+                    Prior to my PhD, I received my MS in Computer Science from OSU in 2023, also advised by Dr. Xiao Fu. During my MS, I developed efficient and principled ML methods for important problems in wireless communications and federated learning. The work was funded jointly by Intel and NSF under the 
+                    <a href='https://www.nsf.gov/pubs/2019/nsf19591/nsf19591.htm' target="_blank">Machine Learning for Wireless Networking Systems (MLWiNS)</a> program.
               </p>
               <p>
-                Prior to my PhD, I received my MS in Computer Science from OSU in 2023, also advised by Dr. Xiao Fu. During my MS, I developed efficient and principled ML methods for important problems in wireless communications and federated learning. The work was funded jointly by Intel and NSF under the <a href='https://www.nsf.gov/pubs/2019/nsf19591/nsf19591.htm'>Machine Learning for Wireless Networking Systems (MLWiNS)</a> program.
+                    During my PhD, I have interned at <strong>Amazon</strong> as an <strong>Applied Scientist Intern</strong> (Ongoing) and at <strong>Samsung Research America</strong> as a <strong>Computer Vision Research Intern</strong>.
               </p>
               <p>
-                During my PhD, I have interned at <b>Amazon</b> as an <b>Applied Scientist Intern</b> (Ongoing) and at <b>Samsung Research America</b> as a <b>Computer Vision Research Intern</b> lab. 
+                    Before joining OSU, I co-founded <a href="www.paailatechnology.com" target="_blank" rel="noopener">Paaila Technology</a>, where I led the development of 
+                    <a href="https://www.youtube.com/watch?v=ib88ES7M7L0" target="_blank" rel="noopener">waiter robots</a> and 
+                    <a href="https://everestbankltd.com/" target="_blank" rel="noopener">banking assistant chatbot</a>.
               </p>
               <p>
-                Before joining OSU, I co-founded <a href="www.paailatechnology.com" target="_blank" rel="noopener">Paaila Technology</a>, where I led the development of <a href="https://www.youtube.com/watch?v=ib88ES7M7L0" target="_blank" rel="noopener">waiter robots</a> and <a href="https://everestbankltd.com/" target="_blank" rel="noopener">banking assistant chatbot</a>.
-                <!-- , and <a href="https://kathmandupost.com/science-technology/2020/05/12/after-interactive-humanoids-this-lalitpur-based-start-up-is-developing-ventilators" target="_blank" rel="noopener">emergency ventilators</a> and <a href="https://www.youtube.com/watch?v=MF2TFJ7Ti_M" target="_blank" rel="noopener">medicine delivery robot</a>.  -->
-                <!-- I also worked as an instructor at <a href="https://tcioe.edu.np/" target="_blank" rel="noopener">Thapathali Campus, Tribhuvan University</a> for two semesters teaching undergraduate courses: "Instrumentation Systems" and "Telecommunications".  -->
-                <!-- Prior to OSU, I co-founded a robotics startup  -->
-              </p>
-              <p>During my undergraduate study, I was a team member of Team Nepal for <a href="https://en.wikipedia.org/wiki/ABU_Robocon" target="_blank" rel="noopener">ABU Robocon</a> 2015 and 2016, where my team won <a href="https://robotics.pcampus.edu.np/index.php/awards/" target="_blank" rel="noopener">many awards</a>.</p>
-            </div>
-
-          </div>
+                    During my undergraduate study, I was a team member of Team Nepal for 
+                    <a href="https://en.wikipedia.org/wiki/ABU_Robocon" target="_blank" rel="noopener">ABU Robocon</a> 2015 and 2016, where my team won 
+                    <a href="https://robotics.pcampus.edu.np/index.php/awards/" target="_blank" rel="noopener">many awards</a>.
+                </p>
         </div>
       </div>
     </section>
@@ -226,566 +135,366 @@
     </section> -->
 
 
-    <section id="featured" class="home-section">
-      <div class="container col-lg-8">
-        <!-- <div class="row"> -->
-          <div style="padding-bottom:20px">
-            <h2><b>Select Publications</b></h2>
-            </br>
-          </div>
-          
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-
-              <div class="col-lg-4 profile center" >
-                <img src="assets/paper_figures/dfm_website image.png" height="450" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Diversified Flow Matching with Translation Identifiability</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu
-                </p>               <p><i>International Conference on Maching Learning (<b>ICML</b>) 2025 </i></p>
-                <p align="justify">
-                  Diversified distribution matching (DDM) finds a unified translation function mapping a diverse collection of conditional source distributions to their target counterparts. DDM was proposed to resolve content misalignment issues in unpaired domain translation, achieving translation identifiability. However, DDM has only been implemented using GANs due to its constraints on the translation function. GANs are often unstable to train and do not provide the transport trajectory information---yet such trajectories are useful in applications such as single-cell evolution analysis and robot route planning. This work introduces diversified flow matching (DFM), an ODE-based framework for DDM. Adapting flow matching (FM) to enforce a unified translation function as in DDM is challenging, as FM learns the translation function's velocity rather than the translation function itself. A custom bilevel optimization-based training loss, a nonlinear interpolant, and a structural reformulation are proposed to address these challenges, offering a tangible implementation. To our knowledge, DFM is the first ODE-based approach guaranteeing translation identifiability. Experiments on synthetic and real-world datasets validate the proposed method   
-              </p>
-              <div class="center">
-                <p>
-                  <a class="link" href="https://openreview.net/pdf?id=P0zvNhHGG9">Paper</a> |
-                  <a class="link" href="assets/bibtex/shrestha2025diversified.txt">Bibtex</a> |
-                  Code (Coming Soon)
-                </p>
-              </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-
-              <div class="col-lg-4 profile center" >
-                <img src="assets/paper_figures/cs_disent2.png" height="450" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Content-Style Learning from Unaligned Domains: Identifiability under Unknown Latent Dimensions</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu
-                </p>               <p><i>International Conference on Learning Representations (<b>ICLR</b>) 2025 </i></p>
-                <p align="justify">
-                  This work develops a novel framework for identifying latent content and style variables from unaligned multi-domain data, a crucial challenge in domain translation and generative modeling. We introduce cross-domain latent distribution matching (LDM) along with sparsity constraint to identify the latent content and style variables without latent dimension information. Furthermore, we translate LDM into a computationally efficient regularized multi-domain GAN formulation, achieving superior results with reduced overhead compared to existing methods. Experiments validate the practicality and theoretical soundness of our approach, advancing the frontiers of unsupervised representation learning.        
-              </p>
-              <div class="center">
-                <p>
-                  <a class="link" href="https://arxiv.org/pdf/2411.03755">Paper</a> |
-                  <a class="link" href="assets/bibtex/shrestha2025content.txt">Bibtex</a> |
-                  Code (Coming Soon)
-                </p>
-              </div>
-              </div>
-            </div>
-          </div>
-<!-- 
-        
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-
-              <div class="col-lg-4 profile center" >
-                <img src="assets/paper_figures/cs_disent2.png" height="450" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Content-Style Learning from Unaligned Domains: Identifiability under Unknown Latent Dimensions</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu
-                </p>               <p><i>International Conference on Learning Representations (<b>ICLR</b>) 2025 </i></p>
-                <p align="justify">
-                  This work develops a novel framework for identifying latent content and style variables from unaligned multi-domain data, a crucial challenge in domain translation and generative modeling. We introduce cross-domain latent distribution matching (LDM) along with sparsity constraint to identify the latent content and style variables without latent dimension information. Furthermore, we translate LDM into a computationally efficient regularized multi-domain GAN formulation, achieving superior results with reduced overhead compared to existing methods. Experiments validate the practicality and theoretical soundness of our approach, advancing the frontiers of unsupervised representation learning.        
-              </p>
-              <div class="center">
-                <p>
-                  <a class="link" href="https://arxiv.org/pdf/2411.03755">Paper</a> |
-                  <a class="link" href="assets/bibtex/shrestha2024content.txt">Bibtex</a> |
-                  Code (Coming Soon)
-                </p>
-              </div>
-              </div>
-            </div>
-          </div>
-           -->
-
-
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-
-              <div class="col-lg-4 profile center" >
-                <img src="assets/paper_figures/sca.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Identifiable Shared Component Analysis of Unpaired Multimodal Mixtures</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  Subash Timilsina, <b>Sagar Shrestha</b>, Xiao Fu
-                </p>                <p><i>Neural Information Processing Systems (<b>NeurIPS</b>) 2024 </i></p>
-                <p align="justify">
-                  This work investigates shared component identifiability from multi-modal linear mixtures with unaligned cross-modality samples, extending beyond previous research on aligned samples. We propose a distribution divergence minimization-based loss and derive sufficient conditions for shared component identifiability. Our approach, based on cross-modality distribution discrepancy and density-preserving transform removal, offers milder conditions than existing methods. We also provide relaxed conditions through structural constraints motivated by side information. Promising results are obtained for domain adaptation, single cell multi-modal data alignment, and multilingual lexicon embeddings alignment.
-              </p>
-              <div class="center">
-                <p>
-                  <a class="link" href="https://arxiv.org/pdf/2409.19422">Paper</a> |
-                  <a class="link" href="assets/bibtex/timilsina2024identifiable.txt">Bibtex</a> |
-                  <a class="link" href="https://openreview.net/forum?id=ivCX2cjwcT">Code</a>
-                </p>
-              </div>
-              </div>
-            </div>
-          </div>
-          
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              
-
-              <div class="col-lg-4 profile center" >
-                <img src="assets/paper_figures/dimension/merged_dimension.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Towards Identifiable Unsupervised Domain Translation: A Diversified Distribution Matching Approach</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu
-                </p>                <p><i>International Conference on Learning Representations (<b>ICLR</b>) 2024 </i></p>
-                <p align="justify">
-                Unsupervised domain translation is the problem of learning a mapping between two domains without paired data. Existing methods (e.g. CycleGAN and follow-up works) generally tackle the problem with distribution matching objectives. A fundamental issue with these approaches is the the "non-identifiability" of translation maps due to the existence of multiple solutions. This results in "content-misaligned" translations in practice. Our work proposes a simple yet provable solution to address this issue. We reveal interesting insights into the nature of the UDT problem. The proposed identifiable solution is demonstrated to be effective in avoiding the content-misalignment issue.
-              </p>
-              <div class="center">
-                <p>
-                  <a class="link" href="https://arxiv.org/abs/2401.09671">Paper</a> |
-                  <a class="link" href="assets/bibtex/shrestha2024towards.txt">Bibtex</a> |
-                  <a class="link" href="https://github.com/XiaoFuLab/Identifiable-Unsupservised-Domain-Translation">Code</a>
-                </p>
-              </div>
-              </div>
-            </div>
-          </div>
-          
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              
-
-              <div class="col-lg-4 profile center">
-                <img src="assets/paper_figures/oct_results.png" height="400" width="400" alt="OCT Super-Resolution">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title">Translation Identifiability-Guided Unsupervised Cross-Platform Super-Resolution for OCT Images</div>
-                <p class="blue">
-                  Jiahui Song*, <b>Sagar Shrestha*</b>, Xueshen Li, Yu Gan, and Xiao Fu (<b>* Equal Contribution</b>)
-                </p>
-                <p><i>IEEE SAM Workshop 2024</i></p>
-                <p align="justify">
-                  Optical Coherence Tomography (OCT) provides detailed cross-sectional images of coronary arteries, but cost-effective systems produce only low-resolution images. Unsupervised OCT super-resolution (OCT-SR) offers a solution without requiring high-resolution systems or paired images. Existing methods use CycleGAN, which lacks translation identifiability, leading to incorrect results. Our work proposes a translation identifiability-guided framework using a diversified distribution matching module. This approach guarantees OCT translation identifiability under reasonable conditions with a simple learning loss. Results show our framework matches or exceeds state-of-the-art performance while requiring fewer resources such as annotations, computation time, and memory.
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10636686">Paper</a> | 
-                    <a class="link" href="assets/bibtex/song2024translation.txt">Bibtex</a> |
-                    <!-- <a class="link" href="https://github.com/XiaoFuLab/Identifiable-Unsupervised-OCT-SR">Code</a> -->
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4 profile center">
-                  <img src="assets/paper_figures/bb_ml_process.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Optimal Solutions for Joint Beamforming and Antenna Selection: From Branch and Bound to Graph Neural Imitation Learning</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu, Mingyi Hong
-                </p>
-                <p><i>IEEE Transactions on Signal Processing (<b>TSP</b>) 2023 </i></p>
-                <p align="justify">
-                  Joint Beamforming and Antenna selection is a mix of non-convex continuous and combinatorial optimization problem. Existing methods are based on continuous convex approximation or greedy solutions that are suboptimal. We address this issue by first proposing an optimal Branch and Bound (B&B) algorithm for the problem. To address the potential scalability issue of the B&B, we propose a GNN based policy learnt via imitation learning to speed up the B&B. The proposed approach is demonstrated to be effective in achieving near-optimal solutions with significantly reduced computational complexity.    
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://arxiv.org/abs/2206.05576">Paper</a> |
-                    <a class="link" href="assets/bibtex/shrestha2023optimal.txt">Bibtex</a> |
-                    <a class="link" href="https://github.com/XiaoFuLab/Antenna-Selection-and-Beamforming-with-BandB-and-ML">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4  profile" style="flex-direction: column;">
-                  <div style="padding-bottom: 20px;">
-                    <img src="assets/paper_figures/comm_eff.png" height="400" width="400" >
-                  </div>
-                  <img src="assets/paper_figures/dgcca_result.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Communication-efficient Federated Linear and Deep Generalized Canonical Correlation Analysis </div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu
-                </p>
-                <p><i>IEEE Transactions on Signal Processing (<b>TSP</b>) 2023 </i></p>
-                <p align="justify">
-                  Classic and deep learning-based GCCA algorithms seek low-dimensional common representations of data entities from multiple “views” (e.g., audio and image) using linear transformations and neural networks, respectively. When the views are acquired and stored at different computing agents (e.g., organizations and edge devices) and data sharing is undesired due to privacy or communication cost considerations.  This work puts forth a convergence-guaranteed communication-efficient federated learning framework for both linear and deep GCCA under the Maximum Variance (MAX-VAR) formulation. Compared to the unquantized version, the proposed algorithm enjoys more than 90% communication overhead reduction with virtually no loss in accuracy and convergence speed. 
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/document/9746607">Paper</a> |
-                    <a class="link" href="assets/bibtex/shrestha2023communication.txt">Bibtex</a> |
-                    <a class="link" href="https://github.com/XiaoFuLab/federated_max_var_gcca">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4  profile" style="flex-direction: column;">
-                <div style="padding-bottom: 20px;">
-                <img src="assets/paper_figures/sc_problem.png" height="400" width="400">
-                </div>
-                <img src="assets/paper_figures/quantized_sc.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-              <div class="paper-title" style="margin-top:0px;"> Quantized Radio Map Estimation Using Tensor and Deep Generative Models</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  Subash Timilsina, <b>Sagar Shrestha</b>, Xiao Fu, Mingyi Hong
-                </p>
-                <p><i>IEEE Transactions on Signal Processing (<b>TSP</b>) 2023 </i></p>
-                <p align="justify">
-                  Spectrum cartography (SC), also known as radio map estimation (RME), aims at crafting multi-domain (e.g., frequency and space) radio power propagation maps from limited sensor measurements. Existing SC approaches assume that sensors send real-valued (full-resolution) measurements to the fusion center, which is unrealistic. This work puts forth a quantized SC framework that generalizes the BTD and DGM-based SC to scenarios where heavily quantized sensor measurements are used. A maximum likelihood estimation (MLE)-based SC framework under a Gaussian quantizer is proposed. Recoverability of the radio map using the MLE criterion is characterized under realistic conditions, e.g., imperfect radio map modeling and noisy measurements. Simulations and real-data experiments are used to showcase the effectiveness of the proposed approach.
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/document/10335642">Paper</a> |
-                    <a class="link" href="assets/bibtex/shrestha2022deep.txt">Bibtex</a> |
-                    <a class="link" href="https://github.com/shresthasagar/Deep-SC">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4  profile" style="flex-direction: column;">
-                <div style="padding-bottom: 20px;">
-                  <img src="assets/paper_figures/dgm_illus.png" height="400" width="400">
-                </div>
-                  <img src="assets/paper_figures/dgm_result.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Deep Spectrum Cartography: Completing Radio Map Tensors Using Learned Neural Models</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu, Mingyi Hong
-                </p>
-                <p><i>IEEE Transactions on Signal Processing (<b>TSP</b>) 2022 </i></p>
-                <p align="justify">
-                  The spectrum cartography (SC) technique constructs multi-domain (e.g., frequency, space, and time) radio frequency (RF) maps from limited measurements, which can be viewed as an ill-posed tensor completion problem. In this work, an emitter radio map disaggregation-based approach is proposed, under which only individual emitters radio maps are modeled by DNNs. Using the learned DNNs, a fast nonnegative matrix factorization-based two-stage SC method and a performance-enhanced iterative optimization algorithm are proposed. Theoretical aspects—such as recoverability of the radio tensor, sample complexity, and noise robustness—under the proposed framework are characterized, and such theoretical properties have been elusive in the context of DL-based radio tensor completion. Experiments using synthetic and real-data from indoor and heavily shadowed environments are employed to showcase the effectiveness of the proposed methods.
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/document/9693274">Paper</a> |
-                    <a class="link" href="assets/bibtex/shrestha2022deep.txt">Bibtex</a> |
-                    <a class="link" href="https://github.com/shresthasagar/Deep-SC">Code</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4 profile center">
-                  <img src="assets/paper_figures/dimension/dimension_illus.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Deep Spectrum Cartography Using Quantized Measurements</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  Subash Timilsina, <b>Sagar Shrestha</b>, Xiao Fu
-                </p>
-                <p><i>IEEE International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>) 2023 </i></p>
-                <p align="justify">
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/document/10096058">Paper</a>
-                    <a class="link" src="assets/bibtex/shrestha2024towards.txt">Bibtex</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          
-          <!-- <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4 profile center">
-                  <img src="assets/paper_figures/dimension/dimension_illus.png" height="400" width="400">
-                </div>
-                <div class="col-lg-8">
-                  <div class="paper-title" style="margin-top:0px;">Towards Efficient and Optimal Joint Beamforming and Antenna Selection: A machine Learning Approach</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu, Mingyi Hong
-                </p>
-                <p><i>IEEE International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>) 2023 </i></p>
-                <p align="justify">
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/abstract/document/10096331">Paper</a>
-                    <a class="link" src="assets/bibtex/shrestha2024towards.txt">Bibtex</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4 profile center">
-                  <img src="assets/paper_figures/dimension/dimension_illus.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Communication-efficient federated MAX-VAR generalized CCA via error feedback-assisted quantization</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu
-                </p>
-                <p><i>IEEE International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>) 2022 </i></p>
-                <p align="justify">
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/document/9746607">Paper</a>
-                    <a class="link" src="assets/bibtex/shrestha2024towards.txt">Bibtex</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding-bottom: 60px;">
-            <div class="row">
-              <div class="col-lg-4 profile center">
-                <img src="assets/paper_figures/dimension/dimension_illus.png" height="400" width="400">
-              </div>
-              <div class="col-lg-8">
-                <div class="paper-title" style="margin-top:0px;">Deep Generative Model Learning For Blind Spectrum Cartography with NMF-Based Radio Map Disaggregation</div>
-                <p class="blue" style="margin-top:0px; margin-bottom:0px;">
-                  <b>Sagar Shrestha</b>, Xiao Fu, Mingyi Hong
-                </p>
-                <p><i>IEEE International Conference on Acoustics, Speech, and Signal Processing (<b>ICASSP</b>) 2021 </i></p>
-                <p align="justify">
-                </p>
-                <div class="center">
-                  <p>
-                    <a class="link" href="https://ieeexplore.ieee.org/abstract/document/10096331">Paper</a>
-                    <a class="link" src="assets/bibtex/shrestha2024towards.txt">Bibtex</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <div class="card-simple view-card">
-              <div class="article-metadata">
-                <div><span
-                    class="author-highlighted">Sagar Shrestha</span>, <span>Xiao Fu</span>, <span>Mingyi Hong</span></div><span class="article-date">2021</span>
-                <span class="middot-divider"></span>
-                <span class="pub-publication">IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</span>
-              </div>
-              <div class="paper-title mb-1 mt-3">Deep Generative Model Learning For Blind Spectrum Cartography with NMF-Based Radio Map Disaggregation</div>
-              <div class="article-style">
-                <p></p>
-                </div>
-              <div class="btn-container">
-                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                    href="https://ieeexplore.ieee.org/abstract/document/10096331" target="_blank"
-                    rel="noopener">PDF</a>
-                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                    href="https://github.com/XiaoFuLab/Quantized-Radio-Map-Estimation-BTD-and-DGM" target="_blank"
-                    rel="noopener">Code</a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div> -->
-      <!-- <section id="teaching" class="home-section wg-collection">
-        <div class="home-section-bg"></div>
+    <!-- Research Section -->
+    <section id="research" class="research">
         <div class="container">
-          <div class="row">
-            <div
-              class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-              <h1 class="mb-0">Teaching</h1>
-            </div>
-            <div class="col-12 col-lg-8">
-              <p>Currently
-                I am co-examiner of a course focused on qualitative research and review
-                reports within other method-focused courses. Next to that, I am
-                currently supervising several master’s students in health and social
-                psychology on topics at the intersection of sexual health and decision
-                making. I also have (among other things) teaching experience in:</p>
-              <ul>
-                <li>Development, implementation, and evaluation of (behavior change) interventions</li>
-                <li>Health promotion</li>
-                <li>Behavior (change) theories</li>
-                <li>Self-regulation</li>
-                <li>Research methods</li>
-                <li>Anxiety disorders</li>
-              </ul>
-              <p>In 2021, I obtained my Basiskwalificatie Onderwijs (BKO) / Dutch University Teaching Qualification (UTQ).
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      
-    </section>
-    <section id="blogs" class="home-section wg-collection">
-      <div class="container col-lg-8">
-      <div class="home-section-bg"></div>
-      <div class="container">
-        <div class="row">
-          <div
-            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Blogs</h1>
-          </div>
-          <div class="col-12 col-lg-8">
-            <!-- <div class="card-simple view-card">
-              <div class="article-metadata">
-                <div><span class="author-highlighted">Sagar Shrestha</span>, <span></span>, <span>Xiao Fu</span></div><span class="article-date">[Under Review]</span>
-                <span class="middot-divider"></span>
-                <span class="pub-publication">-</span>
-              </div>
-              <div class="paper-title mb-1 mt-3"><a
-                  href="https://shresthasagar.github.io/publication/making-research-look-like-the-world-looks/">Unpaired Image-to-Image Translation: Guaranteed Identifiability via Data-Split CycleGAN</a></div><a
-                href="https://shresthasagar.github.io/publication/making-research-look-like-the-world-looks/"
-                class="summary-link">
-                <div class="article-style">
-                  <p></p>
-                </div>
-              </a>
-              <div class="btn-links"><a class="btn btn-outline-primary btn-page-header btn-sm"
-                  href="https://doi.org/https://doi.org/10.31219/osf.io/r2e7a" target="_blank" rel="noopener">DOI</a>
-              </div>
-            </div> -->
-            <div class="card-simple view-card">
-              <div><span class="article-date article-metadata">Oct 4, 2024</span>
-              </div>
-              <div class="paper-title mb-1 mt-3"><a href="blogs/unified_perspective_fm_diffusion.html">Unified Perspective on Diffusion and Flow Matching</a></div>
-              <div class="article-style">
-                <p>A note on how to view flow matching and diffusion under the same framework, resulting in great flexibility in designing probability path, training score or vector field, and sampling using SDE or ODE.</p>
-              <img src="assets/images/blogs/sol_fm_diff/combined_ode_sde.gif" alt="SDE sampling Visualization" style="width:100%; max-width: 100%; display:block; margin:auto;" loop autoplay>
-              </div>
-            </div>
-
-            <div class="card-simple view-card">
-              <div><span class="article-date article-metadata">Sept 3, 2024</span>
-              </div>
-              <div class="paper-title mb-1 mt-3"><a href="blogs/optimal_sol_flow_diff.html">Optimal Solutions for Diffusion and Flow Matching Objectives</a></div>
-              <div class="article-style">
-                <p>A short note on understanding the diffusion and flow matching objectives and their solutions.</p>
-              <img src="assets/images/blogs/sol_fm_diff/diffusion_results.png" alt="Diffusion Objective" style="width: 80%; height: auto;">
-
-              </div>
-            </div>
-
-
-            <div class="card-simple view-card">
-              <div><span class="article-date article-metadata">June 28, 2024</span>
-              </div>
-              <div class="paper-title mb-1 mt-3"><a href="blogs/vision_language_models.html">Vision Language Representation Learning</a></div>
-              <div class="article-style">
-                <p> A brief survey into joint representation learning of text and images.</p>
-                <img src="assets/images/blogs/vlm/clip.png" alt="CLIP Architecture" style="width: 100%; display: inline-block;"/>
-              </div>
-            </div>
-              
-            <div class="card-simple view-card">
-              <div><span class="article-date article-metadata">February 20, 2024</span>
-              </div>
-              <div class="paper-title mb-1 mt-3"><a href="blogs/flow_matching.html">Understanding Flow Matching-based Generative Models</a></div>
-              <div class="article-style">
-                <p> A distilled explanation of the flow matching / stochastic interpolant /rectified flow. It features an easy-to-follow proof (not found in original paper) of the flow-matching objective with stochastic interpolants.</p>
-              <img src="assets/images/blogs/fm/fm_illus.png" alt="Samples from s" style="width: 80%; height: auto;"/>
-
-              </div>
-            </div>
-              
-            <div class="card-simple view-card">
-              <div class="article-metadata"><span class="article-date">October 29, 2023</span>
-              </div>
-              <div class="paper-title mb-1 mt-3"><a href="blogs/ica.html">A High Schooler's Guide to Independent Component Analysis</a>
+            <h2 class="section-title">Select Publications</h2>
+            <div class="publications">
                 
+                <!-- Publication 1 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/dfm_website image.png" alt="Diversified Flow Matching">
               </div>
-              <div class="article-style">
-                <p> A beginner's introduction to ICA.</p>
-                <img src="assets/images/blogs/ica/bss_illus.png" alt="Independent Component Analysis" style="width: 70%; "/>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Diversified Flow Matching with Translation Identifiability</h3>
+                        <p class="publication-authors"><strong>Sagar Shrestha</strong>, Xiao Fu</p>
+                        <p class="publication-venue">International Conference on Machine Learning (ICML) 2025</p>
+                        <p class="publication-description">
+                            Diversified distribution matching (DDM) finds a unified translation function mapping a diverse collection of conditional source distributions to their target counterparts. DDM was proposed to resolve content misalignment issues in unpaired domain translation, achieving translation identifiability. However, DDM has only been implemented using GANs due to its constraints on the translation function. This work introduces diversified flow matching (DFM), an ODE-based framework for DDM.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://openreview.net/pdf?id=P0zvNhHGG9" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/shrestha2025diversified.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <span class="pub-link disabled">Code (Coming Soon)</span>
               </div>
             </div>
+          </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/cs_disent2.png" alt="Content-Style Learning">
+              </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Content-Style Learning from Unaligned Domains: Identifiability under Unknown Latent Dimensions</h3>
+                        <p class="publication-authors"><strong>Sagar Shrestha</strong>, Xiao Fu</p>
+                        <p class="publication-venue">International Conference on Learning Representations (ICLR) 2025</p>
+                        <p class="publication-description">
+                            This work develops a novel framework for identifying latent content and style variables from unaligned multi-domain data, a crucial challenge in domain translation and generative modeling. We introduce cross-domain latent distribution matching (LDM) along with sparsity constraint to identify the latent content and style variables without latent dimension information.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/pdf/2411.03755" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/shrestha2025content.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <span class="pub-link disabled">Code (Coming Soon)</span>
+              </div>
+            </div>
+          </div>
+          
+
+
+                <!-- Publication 3 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/sca.png" alt="Shared Component Analysis">
+              </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Identifiable Shared Component Analysis of Unpaired Multimodal Mixtures</h3>
+                        <p class="publication-authors">Subash Timilsina, <strong>Sagar Shrestha</strong>, Xiao Fu</p>
+                        <p class="publication-venue">Neural Information Processing Systems (NeurIPS) 2024</p>
+                        <p class="publication-description">
+                            This work investigates shared component identifiability from multi-modal linear mixtures with unaligned cross-modality samples, extending beyond previous research on aligned samples. We propose a distribution divergence minimization-based loss and derive sufficient conditions for shared component identifiability.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/pdf/2409.19422" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/timilsina2024identifiable.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <a href="https://openreview.net/forum?id=ivCX2cjwcT" class="pub-link" target="_blank">Code</a>
+              </div>
+              </div>
+            </div>
+                <!-- Publication 4 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/dimension/merged_dimension.png" alt="Identifiable Domain Translation">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Towards Identifiable Unsupervised Domain Translation: A Diversified Distribution Matching Approach</h3>
+                        <p class="publication-authors"><strong>Sagar Shrestha</strong>, Xiao Fu</p>
+                        <p class="publication-venue">International Conference on Learning Representations (ICLR) 2024</p>
+                        <p class="publication-description">
+                            Unsupervised domain translation is the problem of learning a mapping between two domains without paired data. Existing methods generally tackle the problem with distribution matching objectives. A fundamental issue with these approaches is the "non-identifiability" of translation maps due to the existence of multiple solutions. Our work proposes a simple yet provable solution to address this issue.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2401.09671" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/shrestha2024towards.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <a href="https://github.com/XiaoFuLab/Identifiable-Unsupervised-Domain-Translation" class="pub-link" target="_blank">Code</a>
+          </div>
+              </div>
+                </div>
+                <!-- Publication 5 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/oct_results.png" alt="OCT Super-Resolution">
+              </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Translation Identifiability-Guided Unsupervised Cross-Platform Super-Resolution for OCT Images</h3>
+                        <p class="publication-authors">Jiahui Song*, <strong>Sagar Shrestha*</strong>, Xueshen Li, Yu Gan, and Xiao Fu (<strong>* Equal Contribution</strong>)</p>
+                        <p class="publication-venue">IEEE SAM Workshop 2024</p>
+                        <p class="publication-description">
+                            Optical Coherence Tomography (OCT) provides detailed cross-sectional images of coronary arteries, but cost-effective systems produce only low-resolution images. Our work proposes a translation identifiability-guided framework using a diversified distribution matching module for OCT super-resolution.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10636686" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/song2024translation.txt" class="pub-link" target="_blank">Bibtex</a>
+            </div>
+          </div>
+                </div>
+                <!-- Publication 6 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/bb_ml_process.png" alt="Joint Beamforming">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Optimal Solutions for Joint Beamforming and Antenna Selection: From Branch and Bound to Graph Neural Imitation Learning</h3>
+                        <p class="publication-authors"><strong>Sagar Shrestha</strong>, Xiao Fu, Mingyi Hong</p>
+                        <p class="publication-venue">IEEE Transactions on Signal Processing (TSP) 2023</p>
+                        <p class="publication-description">
+                            Joint Beamforming and Antenna selection is a mix of non-convex continuous and combinatorial optimization problem. We address this issue by first proposing an optimal Branch and Bound (B&B) algorithm for the problem. To address the potential scalability issue of the B&B, we propose a GNN based policy learnt via imitation learning.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2206.05576" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/shrestha2023optimal.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <a href="https://github.com/XiaoFuLab/Antenna-Selection-and-Beamforming-with-BandB-and-ML" class="pub-link" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+
+                <!-- Publication 7 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/comm_eff.png" alt="Communication-efficient Federated GCCA">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Communication-efficient Federated Linear and Deep Generalized Canonical Correlation Analysis</h3>
+                        <p class="publication-authors"><strong>Sagar Shrestha</strong>, Xiao Fu</p>
+                        <p class="publication-venue">IEEE Transactions on Signal Processing (TSP) 2023</p>
+                        <p class="publication-description">
+                            Classic and deep learning-based GCCA algorithms seek low-dimensional common representations of data entities from multiple "views" (e.g., audio and image) using linear transformations and neural networks, respectively. This work puts forth a convergence-guaranteed communication-efficient federated learning framework for both linear and deep GCCA under the Maximum Variance (MAX-VAR) formulation.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://ieeexplore.ieee.org/document/9746607" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/shrestha2023communication.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <a href="https://github.com/XiaoFuLab/federated_max_var_gcca" class="pub-link" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Publication 8 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/quantized_sc.png" alt="Quantized Radio Map Estimation">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Quantized Radio Map Estimation Using Tensor and Deep Generative Models</h3>
+                        <p class="publication-authors">Subash Timilsina, <strong>Sagar Shrestha</strong>, Xiao Fu, Mingyi Hong</p>
+                        <p class="publication-venue">IEEE Transactions on Signal Processing (TSP) 2023</p>
+                        <p class="publication-description">
+                            Spectrum cartography (SC), also known as radio map estimation (RME), aims at crafting multi-domain (e.g., frequency and space) radio power propagation maps from limited sensor measurements. This work puts forth a quantized SC framework that generalizes the BTD and DGM-based SC to scenarios where heavily quantized sensor measurements are used.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://ieeexplore.ieee.org/document/10335642" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/timilsina2023deep.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <a href="https://github.com/shresthasagar/Deep-SC" class="pub-link" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 9 -->
+                <div class="publication-card">
+                    <div class="publication-image">
+                        <img src="assets/paper_figures/dgm_illus.png" alt="Deep Spectrum Cartography">
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Deep Spectrum Cartography: Completing Radio Map Tensors Using Learned Neural Models</h3>
+                        <p class="publication-authors"><strong>Sagar Shrestha</strong>, Xiao Fu, Mingyi Hong</p>
+                        <p class="publication-venue">IEEE Transactions on Signal Processing (TSP) 2022</p>
+                        <p class="publication-description">
+                            The spectrum cartography (SC) technique constructs multi-domain (e.g., frequency, space, and time) radio frequency (RF) maps from limited measurements, which can be viewed as an ill-posed tensor completion problem. In this work, an emitter radio map disaggregation-based approach is proposed, under which only individual emitters radio maps are modeled by DNNs.
+                        </p>
+                        <div class="publication-links">
+                            <a href="https://ieeexplore.ieee.org/document/9693274" class="pub-link" target="_blank">Paper</a>
+                            <a href="assets/bibtex/shrestha2022deep.txt" class="pub-link" target="_blank">Bibtex</a>
+                            <a href="https://github.com/shresthasagar/Deep-SC" class="pub-link" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+          
+
+
+
+
+
+
+
+            </div>
         </div>
-        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs">
+      <div class="container">
+            <h2 class="section-title">Blogs</h2>
+            <div class="blog-grid">
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/sol_fm_diff/combined_ode_sde.gif" alt="Unified Perspective on Flow Matching">
+          </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Oct 4, 2024</div>
+                        <h3 class="blog-title">
+                            <a href="blogs/unified_perspective_fm_diffusion.html">Unified Perspective on Diffusion and Flow Matching</a>
+                        </h3>
+                        <p class="blog-description">
+                            A note on how to view flow matching and diffusion under the same framework, resulting in great flexibility in designing probability path, training score or vector field, and sampling using SDE or ODE.
+                        </p>
+              </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/sol_fm_diff/diffusion_results.png" alt="Optimal Solutions for Diffusion">
+              </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Sept 3, 2024</div>
+                        <h3 class="blog-title">
+                            <a href="blogs/optimal_sol_flow_diff.html">Optimal Solutions for Diffusion and Flow Matching Objectives</a>
+                        </h3>
+                        <p class="blog-description">
+                            A short note on understanding the diffusion and flow matching objectives and their solutions.
+                        </p>
+              </div>
+            </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/vlm/clip.png" alt="Vision Language Models">
+              </div>
+                    <div class="blog-content">
+                        <div class="blog-date">June 28, 2024</div>
+                        <h3 class="blog-title">
+                            <a href="blogs/vision_language_models.html">Vision Language Representation Learning</a>
+                        </h3>
+                        <p class="blog-description">
+                            A brief survey into joint representation learning of text and images.
+                        </p>
+              </div>
+            </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/fm/fm_illus.png" alt="Flow Matching">
+              </div>
+                    <div class="blog-content">
+                        <div class="blog-date">February 20, 2024</div>
+                        <h3 class="blog-title">
+                            <a href="blogs/flow_matching.html">Understanding Flow Matching-based Generative Models</a>
+                        </h3>
+                        <p class="blog-description">
+                            A distilled explanation of the flow matching / stochastic interpolant /rectified flow. It features an easy-to-follow proof (not found in original paper) of the flow-matching objective with stochastic interpolants.
+                        </p>
+              </div>
+            </div>
+              
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blogs/ica/bss_illus.png" alt="Independent Component Analysis">
+              </div>
+                    <div class="blog-content">
+                        <div class="blog-date">October 29, 2023</div>
+                        <h3 class="blog-title">
+                            <a href="blogs/ica.html">A High Schooler's Guide to Independent Component Analysis</a>
+                        </h3>
+                        <p class="blog-description">
+                            A beginner's introduction to ICA.
+                        </p>
+              </div>
+            </div>
+              
       </div>
     </div>
     </section>
     
- 
-  <script src="assets/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
-  <script id="search-hit-fuse-template" type="text/x-template">
-    <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-    </div>
-  </script>
-  <script src="assets/fuse.min.js"
-    integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw=="
-    crossorigin="anonymous"></script>
-  <script src="assets/jquery.mark.min.js"
-    integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg=="
-    crossorigin="anonymous"></script>
-  <script id="page-data" type="application/json">{"use_headroom":false}</script>
-  <script src="assets/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
-  <div id="modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Cite</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span></button>
-        </div>
-        <div class="modal-body">
-          <pre><code></code></pre>
-        </div>
-        <div class="modal-footer"><a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank"><i
-              class="fas fa-copy"></i> Copy</a>
-          <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank"><i
-              class="fas fa-download"></i> Download</a>
-          <div id="modal-error"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <script src="assets/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script><iframe
-    id="netlify-identity-widget" title="Netlify identity widget"
-    style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; "
-    src="assets/a.html"></iframe> -->
-</div>
-<footer>
+    <!-- Footer -->
+    <footer class="footer">
   <div class="container">
-    <p>&copy; 2024 Sagar Shrestha. All rights reserved.</p>
+    <p>&copy; 2025 Sagar Shrestha. All rights reserved.</p>
   </div>
 </footer>
-</body>
 
+    <!-- JavaScript -->
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        // Apply the current theme
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
 </html>
