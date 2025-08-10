@@ -1,193 +1,256 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shrestha Blogs</title>
-  <link rel="stylesheet" href="../assets/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css">
-  <script src="https://kit.fontawesome.com/b4dfb6d676.js" crossorigin="anonymous"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  
-  
-  <style>
-    body { font-family: Arial, sans-serif; font-size: 18px; }
-    .container-xl { max-width: 1140px; margin: 0 auto; padding: 0 15px; }
-    .col-lg-8 { width: 100%; max-width: 800px; margin: 0 auto; }
-    h1, h2, h3 { font-family: Arial, sans-serif; }
-    h1 { font-family: Arial, Helvetica, sans-serif; font-size: 45px;}
-    h2 { font-size: 30px; }
-    h3 { font-size: 25px; }
-    p { text-align: justify; }
-    .blue { color: blue; }
-    .red { color: red; }
-    img { max-width: 100%; height: auto; }
-    figcaption { text-align: center; font-style: italic; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Optimal Solutions for Diffusion and Flow Matching Objectives by Sagar Shrestha">
+    <meta name="author" content="Sagar Shrestha">
+    <title>Optimal Solutions for Diffusion and Flow Matching Objectives | Sagar Shrestha</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- MathJax for mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    
+    <!-- Blog Styles -->
+    <link rel="stylesheet" href="../blog-style.css">
 </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">Sagar Shrestha</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../index.html#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../index.html#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" style="font-size: 18px;">
-  <!-- Navigation Bar -->
-  <div>
-    <script src="assets/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
-    <div class="page-header header--fixed">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-          <!-- make the navbar fit in the middle 8 columns out of 12. And make all the list items align to the right -->
-          <div class="container-xl col-lg-8">
-            <div class="d-none d-lg-inline-flex"><a class="navbar-brand" href="https://shresthasagar.github.io">Sagar Shrestha</a></div><button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span><i class="fas fa-bars"></i></span></button>
-            <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand"
-                href="https://shresthasagar.github.io/">Sagar Shrestha</a></div>
-            <!-- <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-              <ul class="navbar-nav d-md-inline-flex">
-                <li class="nav-item"><a class="nav-link active" href="#about"
-                    data-target="#about"><span>About me</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#featured"
-                    data-target="#featured"><span>Research</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#blogs"
-                    data-target="#blogs"><span>Blogs</span></a></li>
-              </ul>
-            </div> -->
-          </div>
-        </nav>
-      </header>
-    </div>
+    <!-- Blog Container -->
+    <div class="blog-container">
+        <!-- Back Button -->
+        <a href="../index.html#blogs" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Blogs
+        </a>
 
-  <div class="container-xl">
-    <div class="col-lg-8">
-      <header>
-        <h1>Optimal Solutions for Diffusion and Flow Matching Objectives</h1>
-        <p style="color: gray;">April 31, 2024</p>
-      </header>
-      <!-- create a horizontal gap-->
-      <div style="height: 50px;"></div>
-      <p>
-        Diffusion and Flow matching are the state-of-the-art generative models for generating high-quality and diverse data in many domains (e.g., images, audio, video, graph, etc). From an optimization perspective, what makes them so appealing, compared to the previous state-of-the-art GAN based generative models, is that they have simple least squares minimization training objectives compared to the min-max optimization of GANs. 
-      </p>
+        <!-- Blog Header -->
+        <header class="blog-header">
+            <h1 class="blog-title">Optimal Solutions for Diffusion and Flow Matching Objectives</h1>
+            <div class="blog-meta">
+                <div class="blog-date">
+                    <i class="fas fa-calendar"></i>
+                    April 31, 2024
+                </div>
+                <div class="blog-reading-time">
+                    <i class="fas fa-clock"></i>
+                    12 min read
+                </div>
+            </div>
+            <div class="blog-tags">
+                <span class="blog-tag">Diffusion Models</span>
+                <span class="blog-tag">Flow Matching</span>
+                <span class="blog-tag">Optimization</span>
+                <span class="blog-tag">Deep Learning</span>
+            </div>
+        </header>
 
-      <!-- <p>
-        Although diffusion and flow matching models have been very popular with wide applications, it can still be daunting for newcomers to gain precise and deep understanding of these models. Some common
-      </p> -->
-
-      <p>
-      However, the presentation of the diffusion and flow matching objectives are sometimes oversimplified in blog articles and even published papers, mostly for the sake of brevity. This can be detrimental to the understanding of the models and can lead to wrong conclusion. For example, the least squares objective could convey the impression that the optimal objective value is zero <span class="blue">[Eyring et al., 2024, Sec. 3.1]</span>). For another example, the denoising diffusion model objective is often described as trying to estimate the noise in the noisy sample <span class="blue">[HuggingFace Blogs 2022]</span>. This may suggest that if the optimal solution to the objective were obtained (i.e., no optimization error), then removing the noise would result in a perfect reconstruction of the original sample. Hence no iterative/Langevin sampling is needed. However, this is not the case. The correct interpretation has a subtle but important difference: diffusion models estimates the the "expected" value of the noise given the noisy sample. Therefore, the estimated denoising direction is only correct for infitesimally small steps. 
-      </p>
-
-      <p>
-      An important observation that stems from this understanding is that the objective value is not saturated (zero) at the optimal solution, in general. Rather, it is a positive quantity that depends upon the data distributions and the choice of some hyperparameters such as noise scale schedule. This implies that the absolute value of the objective in itself is not an informative quantity for hyperparamter tuning and convergence analysis. 
-      </p>
-
-      <p>
-      In this blog post, we will carefully analyze the diffusion and flow matching objectives and provide a clearer perspective into the optimal solutions.
-      </p>
-
-
-      <h3>Notations</h3>
-      <p>
-        Both diffusion and flow matching fall under continuous normalizing flow based generative models <span class="blue">[Lipman et al., 2023]</span>. The main idea is to continuously morph a base distribution \(p_1\) to a target distribution \(p_0\). Diffusion models can be regarded as a special case of flow matching where the base distribution is a simple easy-to-sample distribution, such as a Gaussian, and the target distribution is the data distribution. Whereas in flow matching, both \(p_0\) and \(p_1\) are allowed to be data distributions (Note: We follow diffusion model notations where the goal is to transport samples from \(p_1\) to \(p_0\); generally, flow matching literature uses the reverse direction). 
-      </p>
-
-      <h3>Diffusion Models</h3>
-      <p>
-        Diffusion models are characterized by a forward diffusion process where samples \(x_0 \sim p_0\) is degraded using the following diffusion process <span class="blue">[Ho et al., 2020]</span>:
-        \[ x_t = I(x_0, \epsilon, t) = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1-\bar{\alpha}_t} \epsilon, ~ \epsilon \sim \mathcal{N}(0, I), \tag{1}\]
-        where \(\bar{\alpha}_t, \bar{\alpha}_t \in (0, 1)\) represents the noise scale at time \(t\) (Note: here we consider variance preserving (VP) diffusion models), \(I(x_0, \epsilon, t)\) is an the interpolation between data sample \(x_0\) and noise \(\epsilon\) at time \(t\). Then the denoising diffusion objective is given by 
-        \[ \mathcal{L}_{\text{diffusion}}(\theta) = \mathbb{E}_{x_0 \sim p_0, \epsilon \sim \mathcal{N}(0, I), t} \left[ \lambda(t)\left\| \epsilon - \epsilon_\theta(I(x_0, \epsilon, t), t) \right\|^2 \right], \tag{2} \]
-        where the coefficient \(\lambda(t)\) is a function of \(\bar{\alpha}_t\). For simplicity, we will assume \(\lambda(t) = 1\) for the rest of the blog post. 
-      </p>
-
-      <p>
-        If we think of \(\epsilon_\theta(x_t, t)\) as estimating the noise in the noisy sample \(x_t\), one could arrive at the conclusion that \(\min_{\theta} \mathcal{L}_{\text{diffusion}}(\theta) = 0\) at the optimal solution. This is because, if the optimal solution is obtained, the estimated noise should be exactly the noise \(\epsilon\) that was added to the data sample \(x_0\) to produce \(x_t\). Therefore, removing the noise should result in a perfect reconstruction of the original data sample. However, this is not the case.
-        The reason is that there are many combinations of \(x_0\) and \(\epsilon\) that can produce the same \(x_t\). Therefore, intuitively, the optimal solution will be the average of all such \(\epsilon\). Precisely, the optimal solution is given by:
-        \[ \epsilon_\theta^*(x, t) = \mathbb{E}_{x_0 \sim p_0, \epsilon \sim \mathcal{N}(0, I)} \left[\epsilon ~|~ x = I(x_0, \epsilon, t)   \right]. \tag{3} \]
-      </p>
-
-      <p>
-        Therefore, the optimal objective value is greater than zero in general. This also corroborates the fact that one cannot obtain clean sample \(x_0\) from \(x_t\) by simply removing the noise \(\epsilon_\theta^*(x_t, t)\). Instead, \(\epsilon_\theta^*(x_t, t)\) is simply an instantaneous direction to slightly nudge the noisy sample \(x_t\) towards the true data distribution \(p_0\). 
-      </p>
+        <!-- Blog Content -->
+        <article class="blog-content">
+            <div style="height: 50px;"></div>
+            <p>
+              Diffusion and Flow matching are the state-of-the-art generative models for generating high-quality and diverse data in many domains (e.g., images, audio, video, graph, etc). From an optimization perspective, what makes them so appealing, compared to the previous state-of-the-art GAN based generative models, is that they have simple least squares minimization training objectives compared to the min-max optimization of GANs. 
+            </p>
       
-      <!-- include a gif and a plot here -->
-      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <img src="../assets/images/blogs/sol_fm_diff/diffusion_process.gif" alt="Diffusion Optimal Solution" style="width:70%; height: auto; margin-bottom: 20px;">
-        <img src="../assets/images/blogs/sol_fm_diff/diffusion_results.png" alt="Diffusion Objective" style="width: 80%; height: auto;">
-        <!-- add caption -->
-        <p style="text-align: center; font-style: italic;">
-          Top: Diffusion from <span style="color: blue;">source</span> to the <span style="color: red;">target</span> distribution. Bottom: Objective value during training.
-        </p>
-      </div>
-      <h3>Flow Matching</h3>
-      <p>
-        Flow matching (FM) aims at estimating a time-dependent vector field \(u_t\) that continuously morphs \(p_1\) to \(p_0\) tracing the probability path \(p_t, t \in [0, 1]\). The ideal flow matching objective is to regress over such a vector field. 
-        \[
-        \min_{\theta} ~~\mathcal{L}_{\text{FM}}(\theta) = \mathbb{E}_{x_t \sim p_t} \left[ \left\| v_\theta(x_t, t) - u_t(x_t) \right\|^2 \right]. \tag{4}
-        \]
-        However, this ideal objective is intractable due to the unknown velocity field \(u_t\). Instead, FM considers the following conditional flow matching objective, which has the same minimizer as Eq. (4) <span class="blue">[Lipman et al., 2023, Albergo et al., 2023, Liu et al., 2023]</span>:
-        \[
-        \min_{\theta} ~~\mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{z \sim q(z), x_t \sim p_t(x_t|z)} \left[ \left\| v_\theta(x_t, t) - u_t(x_t|z) \right\|^2 \right], \tag{5}
-        \]
-        where \(u_t(x_t|z)\) is the conditional velocity field that traces the conditional probability path \(p_t(x_t|z)\) for a given \(z\). 
-        For example, \(q(z)\) can be the joint distribution of \( x_0 \sim p_0, x_1 \sim p_1 \), and \(p_t(x_t|x_0, x_1)= \delta_{I(x_1, x_0, t)} (x_t)\), where \(\delta_y(x)\) is the dirac measure centered at \(y\), and \(I(x_1, x_0, t)\) be the so-called stochastic interpolant function <span class="blue">[Albergo et al., 2023]</span> (c.f. Eq. (1)) such that \(I(x_1, x_0, 0) = x_1\) and \(I(x_1, x_0, 1) = x_0\). This will imply that \(u_t(x_t|z) = u_t(x_t|x_0, x_1) = \frac{\partial}{\partial t} I(x_1, x_0, t)\) is the associated unique conditional vector field. Hence, the practical objective used throughout the FM literature is given by:
-        \[
-        \min_{\theta} ~~\mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{t, x_0 \sim p_0, x_1 \sim p_1 } \left[ \left\| v_\theta(I(x_1, x_0, t), t) - \frac{\partial}{\partial t} I(x_1, x_0, t) \right\|^2 \right]. \tag{6}
-        \]
-        </p>
-
-        <p>
-          The optimal solution of Eq. (6) is given by:
-          \[
-          v_\theta^*(x, t) = \mathbb{E}_{x_0 \sim p_0, x_1 \sim p_1} \left[ \frac{\partial}{\partial t} I(x_1, x_0, t) ~|~ x = I(x_1, x_0, t) \right]. \tag{7}
-          \]
-        </p>
-
-        <p>
-        Similar to the case of diffusion models, the optimal vector field at point \(x\) and time \(t\) is the average of the conditional vector field (derivative of the interpolant) over all choices of end points \(x_0\) and \(x_1\) such that the interpolant at time \(t\) has the value \(x\).
-
-        The optimal objective value is obtained by substituting the optimal vector field into Eq. (6). In general, this value is greater than zero. 
-        </p>
-
-
-
-      <article>
-        <br/>
-        <h2>References</h2>
-
-        <div id="eyring2023unbalancedness" style="margin-bottom: 10px;">
-          <p>[<span class="blue">Eyring et al., 2024</span>] Eyring, L., Klein, D., Uscidda, T., Palla, G., Kilbertus, N., Akata, Z., & Theis, F. (2024). Unbalancedness in Neural Monge Maps Improves Unpaired Domain Translation. arXiv preprint arXiv:2311.15100.</p>
-        </div>
-
-        <div id="annotated-diffusion" style="margin-bottom: 10px;">
-          <p>[<span class="blue">HuggingFace Blogs 2022</span>] https://huggingface.co/blog/annotated-diffusion</p>
-        </div>
-
-        <div id="ho2020denoising" style="margin-bottom: 10px;">
-          <p>[<span class="blue">Ho et al., 2020</span>] Ho, J., Jain, A., & Abbeel, P. (2020). Denoising diffusion probabilistic models. Advances in neural information processing systems, 33, 6840-6851.</p>
-        </div>
-        <div id="lipman2023flow" style="margin-bottom: 10px;">
-          <p>[<span class="blue">Lipman et al., 2023</span>] Lipman, Y., Chen, R. T., Ben-Hamu, H., Nickel, M., & Le, M. (2023). Flow matching for generative modeling. arXiv preprint arXiv:2210.02747.</p>
+            <!-- <p>
+              Although diffusion and flow matching models have been very popular with wide applications, it can still be daunting for newcomers to gain precise and deep understanding of these models. Some common
+            </p> -->
+      
+            <p>
+            However, the presentation of the diffusion and flow matching objectives are sometimes oversimplified in blog articles and even published papers, mostly for the sake of brevity. This can be detrimental to the understanding of the models and can lead to wrong conclusion. For example, the least squares objective could convey the impression that the optimal objective value is zero <span class="blue">[Eyring et al., 2024, Sec. 3.1]</span>). For another example, the denoising diffusion model objective is often described as trying to estimate the noise in the noisy sample <span class="blue">[HuggingFace Blogs 2022]</span>. This may suggest that if the optimal solution to the objective were obtained (i.e., no optimization error), then removing the noise would result in a perfect reconstruction of the original sample. Hence no iterative/Langevin sampling is needed. However, this is not the case. The correct interpretation has a subtle but important difference: diffusion models estimates the the "expected" value of the noise given the noisy sample. Therefore, the estimated denoising direction is only correct for infitesimally small steps. 
+            </p>
+      
+            <p>
+            An important observation that stems from this understanding is that the objective value is not saturated (zero) at the optimal solution, in general. Rather, it is a positive quantity that depends upon the data distributions and the choice of some hyperparameters such as noise scale schedule. This implies that the absolute value of the objective in itself is not an informative quantity for hyperparamter tuning and convergence analysis. 
+            </p>
+      
+            <p>
+            In this blog post, we will carefully analyze the diffusion and flow matching objectives and provide a clearer perspective into the optimal solutions.
+            </p>
+      
+      
+            <h3>Notations</h3>
+            <p>
+              Both diffusion and flow matching fall under continuous normalizing flow based generative models <span class="blue">[Lipman et al., 2023]</span>. The main idea is to continuously morph a base distribution \(p_1\) to a target distribution \(p_0\). Diffusion models can be regarded as a special case of flow matching where the base distribution is a simple easy-to-sample distribution, such as a Gaussian, and the target distribution is the data distribution. Whereas in flow matching, both \(p_0\) and \(p_1\) are allowed to be data distributions (Note: We follow diffusion model notations where the goal is to transport samples from \(p_1\) to \(p_0\); generally, flow matching literature uses the reverse direction). 
+            </p>
+      
+            <h3>Diffusion Models</h3>
+            <p>
+              Diffusion models are characterized by a forward diffusion process where samples \(x_0 \sim p_0\) is degraded using the following diffusion process <span class="blue">[Ho et al., 2020]</span>:
+              \[ x_t = I(x_0, \epsilon, t) = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1-\bar{\alpha}_t} \epsilon, ~ \epsilon \sim \mathcal{N}(0, I), \tag{1}\]
+              where \(\bar{\alpha}_t, \bar{\alpha}_t \in (0, 1)\) represents the noise scale at time \(t\) (Note: here we consider variance preserving (VP) diffusion models), \(I(x_0, \epsilon, t)\) is an the interpolation between data sample \(x_0\) and noise \(\epsilon\) at time \(t\). Then the denoising diffusion objective is given by 
+              \[ \mathcal{L}_{\text{diffusion}}(\theta) = \mathbb{E}_{x_0 \sim p_0, \epsilon \sim \mathcal{N}(0, I), t} \left[ \lambda(t)\left\| \epsilon - \epsilon_\theta(I(x_0, \epsilon, t), t) \right\|^2 \right], \tag{2} \]
+              where the coefficient \(\lambda(t)\) is a function of \(\bar{\alpha}_t\). For simplicity, we will assume \(\lambda(t) = 1\) for the rest of the blog post. 
+            </p>
+      
+            <p>
+              If we think of \(\epsilon_\theta(x_t, t)\) as estimating the noise in the noisy sample \(x_t\), one could arrive at the conclusion that \(\min_{\theta} \mathcal{L}_{\text{diffusion}}(\theta) = 0\) at the optimal solution. This is because, if the optimal solution is obtained, the estimated noise should be exactly the noise \(\epsilon\) that was added to the data sample \(x_0\) to produce \(x_t\). Therefore, removing the noise should result in a perfect reconstruction of the original data sample. However, this is not the case.
+              The reason is that there are many combinations of \(x_0\) and \(\epsilon\) that can produce the same \(x_t\). Therefore, intuitively, the optimal solution will be the average of all such \(\epsilon\). Precisely, the optimal solution is given by:
+              \[ \epsilon_\theta^*(x, t) = \mathbb{E}_{x_0 \sim p_0, \epsilon \sim \mathcal{N}(0, I)} \left[\epsilon ~|~ x = I(x_0, \epsilon, t)   \right]. \tag{3} \]
+            </p>
+      
+            <p>
+              Therefore, the optimal objective value is greater than zero in general. This also corroborates the fact that one cannot obtain clean sample \(x_0\) from \(x_t\) by simply removing the noise \(\epsilon_\theta^*(x_t, t)\). Instead, \(\epsilon_\theta^*(x_t, t)\) is simply an instantaneous direction to slightly nudge the noisy sample \(x_t\) towards the true data distribution \(p_0\). 
+            </p>
+            
+            <!-- include a gif and a plot here -->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <img src="../assets/images/blogs/sol_fm_diff/diffusion_process.gif" alt="Diffusion Optimal Solution" style="width:70%; height: auto; margin-bottom: 20px;">
+              <img src="../assets/images/blogs/sol_fm_diff/diffusion_results.png" alt="Diffusion Objective" style="width: 80%; height: auto;">
+              <!-- add caption -->
+              <p style="text-align: center; font-style: italic;">
+                Top: Diffusion from <span style="color: blue;">source</span> to the <span style="color: red;">target</span> distribution. Bottom: Objective value during training.
+              </p>
+            </div>
+            <h3>Flow Matching</h3>
+            <p>
+              Flow matching (FM) aims at estimating a time-dependent vector field \(u_t\) that continuously morphs \(p_1\) to \(p_0\) tracing the probability path \(p_t, t \in [0, 1]\). The ideal flow matching objective is to regress over such a vector field. 
+              \[
+              \min_{\theta} ~~\mathcal{L}_{\text{FM}}(\theta) = \mathbb{E}_{x_t \sim p_t} \left[ \left\| v_\theta(x_t, t) - u_t(x_t) \right\|^2 \right]. \tag{4}
+              \]
+              However, this ideal objective is intractable due to the unknown velocity field \(u_t\). Instead, FM considers the following conditional flow matching objective, which has the same minimizer as Eq. (4) <span class="blue">[Lipman et al., 2023, Albergo et al., 2023, Liu et al., 2023]</span>:
+              \[
+              \min_{\theta} ~~\mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{z \sim q(z), x_t \sim p_t(x_t|z)} \left[ \left\| v_\theta(x_t, t) - u_t(x_t|z) \right\|^2 \right], \tag{5}
+              \]
+              where \(u_t(x_t|z)\) is the conditional velocity field that traces the conditional probability path \(p_t(x_t|z)\) for a given \(z\). 
+              For example, \(q(z)\) can be the joint distribution of \( x_0 \sim p_0, x_1 \sim p_1 \), and \(p_t(x_t|x_0, x_1)= \delta_{I(x_1, x_0, t)} (x_t)\), where \(\delta_y(x)\) is the dirac measure centered at \(y\), and \(I(x_1, x_0, t)\) be the so-called stochastic interpolant function <span class="blue">[Albergo et al., 2023]</span> (c.f. Eq. (1)) such that \(I(x_1, x_0, 0) = x_1\) and \(I(x_1, x_0, 1) = x_0\). This will imply that \(u_t(x_t|z) = u_t(x_t|x_0, x_1) = \frac{\partial}{\partial t} I(x_1, x_0, t)\) is the associated unique conditional vector field. Hence, the practical objective used throughout the FM literature is given by:
+              \[
+              \min_{\theta} ~~\mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{t, x_0 \sim p_0, x_1 \sim p_1 } \left[ \left\| v_\theta(I(x_1, x_0, t), t) - \frac{\partial}{\partial t} I(x_1, x_0, t) \right\|^2 \right]. \tag{6}
+              \]
+              </p>
+      
+              <p>
+                The optimal solution of Eq. (6) is given by:
+                \[
+                v_\theta^*(x, t) = \mathbb{E}_{x_0 \sim p_0, x_1 \sim p_1} \left[ \frac{\partial}{\partial t} I(x_1, x_0, t) ~|~ x = I(x_1, x_0, t) \right]. \tag{7}
+                \]
+              </p>
+      
+              <p>
+              Similar to the case of diffusion models, the optimal vector field at point \(x\) and time \(t\) is the average of the conditional vector field (derivative of the interpolant) over all choices of end points \(x_0\) and \(x_1\) such that the interpolant at time \(t\) has the value \(x\).
+      
+              The optimal objective value is obtained by substituting the optimal vector field into Eq. (6). In general, this value is greater than zero. 
+              </p>
+      
+      
+      
+            <article>
+              <br/>
+              <h2>References</h2>
+      
+              <div id="eyring2023unbalancedness" style="margin-bottom: 10px;">
+                <p>[<span class="blue">Eyring et al., 2024</span>] Eyring, L., Klein, D., Uscidda, T., Palla, G., Kilbertus, N., Akata, Z., & Theis, F. (2024). Unbalancedness in Neural Monge Maps Improves Unpaired Domain Translation. arXiv preprint arXiv:2311.15100.</p>
+              </div>
+      
+              <div id="annotated-diffusion" style="margin-bottom: 10px;">
+                <p>[<span class="blue">HuggingFace Blogs 2022</span>] https://huggingface.co/blog/annotated-diffusion</p>
+              </div>
+      
+              <div id="ho2020denoising" style="margin-bottom: 10px;">
+                <p>[<span class="blue">Ho et al., 2020</span>] Ho, J., Jain, A., & Abbeel, P. (2020). Denoising diffusion probabilistic models. Advances in neural information processing systems, 33, 6840-6851.</p>
+              </div>
+              <div id="lipman2023flow" style="margin-bottom: 10px;">
+                <p>[<span class="blue">Lipman et al., 2023</span>] Lipman, Y., Chen, R. T., Ben-Hamu, H., Nickel, M., & Le, M. (2023). Flow matching for generative modeling. arXiv preprint arXiv:2210.02747.</p>
+                </div>
+      
+                <div id="chen2018neural" style="margin-bottom: 10px;">
+                  <p>[<span class="blue">Chen et al., 2018</span>] Chen, R. T., Rubanova, Y., Bettencourt, J., & Duvenaud, D. K. (2018). Neural ordinary differential equations. Advances in neural information processing systems, 31.</p>
+                </div>
+      
+                <div id="albergo2023building" style="margin-bottom: 10px;">
+                  <p>[<span class="blue">Albergo et al., 2023</span>] Albergo, M. S., & Vanden-Eijnden, E. (2023). Building normalizing flows with stochastic interpolants. arXiv preprint arXiv:2209.15571.</p>
+                </div>
+      
+                <div id="liu2023flow" style="margin-bottom: 10px;">
+                  <p>[<span class="blue">Liu et al., 2023</span>] Liu, X., Gong, C., & Liu, Q. (2023). Flow straight and fast: Learning to generate and transfer data with rectified flow. arXiv preprint arXiv:2209.03003.</p>
+                </div>
+      
+            </article>
+            </div>
           </div>
+              </article>
 
-          <div id="chen2018neural" style="margin-bottom: 10px;">
-            <p>[<span class="blue">Chen et al., 2018</span>] Chen, R. T., Rubanova, Y., Bettencourt, J., & Duvenaud, D. K. (2018). Neural ordinary differential equations. Advances in neural information processing systems, 31.</p>
-          </div>
-
-          <div id="albergo2023building" style="margin-bottom: 10px;">
-            <p>[<span class="blue">Albergo et al., 2023</span>] Albergo, M. S., & Vanden-Eijnden, E. (2023). Building normalizing flows with stochastic interpolants. arXiv preprint arXiv:2209.15571.</p>
-          </div>
-
-          <div id="liu2023flow" style="margin-bottom: 10px;">
-            <p>[<span class="blue">Liu et al., 2023</span>] Liu, X., Gong, C., & Liu, Q. (2023). Flow straight and fast: Learning to generate and transfer data with rectified flow. arXiv preprint arXiv:2209.03003.</p>
-          </div>
-
-      </article>
-      </div>
+        <!-- Footer -->
+        <footer class="blog-footer">
+            <p>&copy; 2025 Sagar Shrestha. All rights reserved.</p>
+        </footer>
     </div>
-  </div>
 
-   
-  <script src="../assets/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
-
 </html>

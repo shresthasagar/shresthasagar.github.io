@@ -1,564 +1,418 @@
 <!DOCTYPE html>
-<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: June 12, 2023 -->
-<html lang="en-us">
-
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="IE=edge">
-  <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link rel="preload" as="style" href="../assets/css2.css">
-  <link rel="stylesheet" href="../assets/css2.css" media="all" onload='this.media="all"'>
-
-  <link rel="stylesheet" href="../assets/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="all"
-    onload='this.media="all"'>
-  <link rel="stylesheet" href="../assets/academicons.min.css"
-    integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
-    crossorigin="anonymous" media="all" onload='this.media="all"'>
-  <link rel="stylesheet" href="../assets/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css">
-  <link rel="stylesheet" href="../assets/github-light.min.css" title="hl-light" media="all" onload='this.media="all"'>
-
-  <link rel="stylesheet" href="../assets/dracula.min.css" title="hl-dark" media="print" onload='this.media="all"' disabled="">
-
-  <meta name="author" content="Sagar Shrestha">
-  <meta name="description" content="The personal academic website of social scientist Sagar Shrestha.">
-  <link rel="alternate" hreflang="en-us" href="https://thomasgultzow.com/">
-  <link rel="canonical" href="https://shresthasagar.github.io">
-  <link rel="manifest" href="https://thomasgultzow.com/manifest.webmanifest">
-  <link rel="icon" type="image/png"
-    href="https://thomasgultzow.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
-  <link rel="apple-touch-icon" type="image/png"
-    href="https://thomasgultzow.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png">
-  <meta name="theme-color" content="#1565c0">
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:site" content="@ThomasGultzow">
-  <meta property="twitter:creator" content="@ThomasGultzow">
-  <meta property="twitter:image"
-    content="https://thomasgultzow.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="og:site_name" content="Sagar Shrestha">
-  <meta property="og:url" content="https://">
-  <meta property="og:title" content="Sagar Shrestha">
-  <meta property="og:description" content="The personal academic website of Sagar Shrestha.">
-  <meta property="og:image"
-    content="https://thomasgultzow.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:updated_time" content="2023-05-15T09:10:01+00:00">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://thomasgultzow.com?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://shresthasagar.github.io"}</script>
-  <script src="../assets/netlify-identity-widget.js"></script>
-  <link rel="alternate" href="https://shresthasagar.github.io/index.xml" type="application/rss+xml" title="Sagar Shrestha">
-  <script src="https://kit.fontawesome.com/b4dfb6d676.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script> -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-  <title>Shrestha Blogs</title>
-
-  <style type="text/css">
-    .medium-zoom-overlay {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity .3s;
-      will-change: opacity
-    }
-
-    .medium-zoom--opened .medium-zoom-overlay {
-      cursor: pointer;
-      cursor: zoom-out;
-      opacity: 1
-    }
-
-    .medium-zoom-image {
-      cursor: pointer;
-      cursor: zoom-in;
-      transition: transform .3s cubic-bezier(.2, 0, .2, 1) !important
-    }
-
-    .medium-zoom-image--hidden {
-      visibility: hidden
-    }
-
-    .medium-zoom-image--opened {
-      position: relative;
-      cursor: pointer;
-      cursor: zoom-out;
-      will-change: transform
-    }
-
-    .paper-title {
-      font-family: Arial, sans-serif;
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-
-/* h2 Style */
-h2 {
-    font-size: 2em;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    font-weight: 700;
-}
-
-/* h3 Style */
-h3 {
-    font-size: 1.75em;
-    color: #34495e;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-/* h4 Style */
-h4 {
-    font-size: 1.5em;
-    color: #2c3e50;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-/* h5 Style */
-h5 {
-    font-size: 1.25em;
-    color: #4d5252;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-weight: 510;
-}
-
-  </style>
-  <!-- <link rel="prefetch" href="https://thomasgultzow.com/"> -->
-</head>
-
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main"  style="font-size: 18px;">
-  <div>
-    <script src="assets/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
-    <div class="page-header header--fixed">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-          <!-- make the navbar fit in the middle 8 columns out of 12. And make all the list items align to the right -->
-          <div class="container-xl col-lg-8">
-            <div class="d-none d-lg-inline-flex"><a class="navbar-brand" href="https://shresthasagar.github.io">Sagar Shrestha</a></div><button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span><i class="fas fa-bars"></i></span></button>
-            <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand"
-                href="https://shresthasagar.github.io/">Sagar Shrestha</a></div>
-            <!-- <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
-              <ul class="navbar-nav d-md-inline-flex">
-                <li class="nav-item"><a class="nav-link active" href="#about"
-                    data-target="#about"><span>About me</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#featured"
-                    data-target="#featured"><span>Research</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#blogs"
-                    data-target="#blogs"><span>Blogs</span></a></li>
-              </ul>
-            </div> -->
-          </div>
-        </nav>
-      </header>
-    </div>
-
-    <div class="container-xl col-lg-8"> 
-      <br/>
-      <br/>
-      <br/>
-        <header class="post-header">
-          <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 45px;">Vision Language Representation Learning</h1>
-          <p style="color: gray;">June 28, 2024</p>
-        </header>
-      
-        <article class="post-content">
-        <style>
-          p {
-            /* font-size: 17px; */
-            text-align: justify;
-          } 
-         
-          .blue{
-            color: blue;
-          }
-
-          .red{
-            color: red;
-          }
-          h3 {
-            font-family: Arial, sans-serif;
-            font-size: 25px;
-          }
-          h2 {
-            font-family: Arial, sans-serif;
-            font-size: 30px;
-          }
-          body {
-            font-family: Arial, sans-serif;
-          }
-          header {
-            font-family: Arial, sans-serif;
-          }
-        .half-width {
-        width: 50%;
-        margin: 0 auto;
-        }
-      .post-header h1 {
-          font-size: 35px;
-      }
-      .post pre,
-      .post code {
-          background-color: #fcfcfc;
-          font-size: 13px; /* make code smaller for this post... */
-      }
-      </style>
-      <br/>
-      <br/>
-
-      
-      <p><b>Table of Contents</b></p>
-      <ul>
-        <li><a href="#unimodal-representation-learning">Unimodal Representation Learning: Part I</a></li>
-          <ul>
-            <li><a href='#text-encoders'>Text Encoders (BERT, T5)</a></li>
-            <li><a href='#vision-encoders'>Vision Encoders</a></li>
-            <ul>
-              <li><a href='#discrete-representation'>Discrete Representations (VQ-VAE, VQ-GAN)</a></li>
-              <li><a href='#continuous-representation'>Continuous Representations (SimCLR, MAE)</a></li>
-            </ul>
-          </ul>
-        <li><a href='#multimodal-representation-learning'>Multimodal Representation Learning: Part II</a></li>
-          <ul>
-            <li><a href='#contrastive-learning'>Contrastive Learning (CLIP, ALIGN, LiT, SigLIP, LliP)</a></li>
-          </ul>
-        
-      </ul>
-
-      <p><em>(The following article is derived from my reading group presentation on vision-language representation learning.) </em></p>
-      <p>
-      Vision-language representation learning has emerged as a pivotal area in artificial intelligence, bridging the gap between computer vision and natural language processing. From enhancing image search capabilities to enabling sophisticated AI assistants, vision-language models are revolutionizing how machines perceive and interact with the world. In this post, we'll explore the key components and recent advancements in this rapidly evolving field, covering the state-of-the-art vision language representation learners. 
-
-      <p> To facilitate the discussion, we introduce the following notation:</p>
-      <ul>
-          <li>\( x, \boldsymbol{x}, \boldsymbol{X}, \mathcal{X} \) denote a scalar, vector, and matrix, respectively.</li>
-          <li>\( x(i) \) denotes the \( i \)-th element of vector \( \boldsymbol{x} \).</li>
-          <li>\( ( \boldsymbol{x}_n^{(t)} )_{n=1}^{N_t} \) and \( ( \boldsymbol{x}_n^{(v)} )_{n=1}^{N_v} \) denote the input text sequence, and image patches, respectively.</li>
-          <li>\( ( \boldsymbol{h}_n^{(t)} )_{n=1}^{N_t} \) and \( ( \boldsymbol{h}_n^{(v)} )_{n=1}^{N_v} \) denote the corresponding text and image embeddings.</li>
-      </ul>
-      </p>
-
-      <h2 id="unimodal-representation-learning">Unimodal Representation Learning</h2>
-      <p>
-        Given an image domain \( \mathcal{V} \) (or a text domain \( \mathcal{T} \)), the goal of unimodal representation learning is to learn an encoder \( \boldsymbol{e}^{(v)}: \mathcal{V} \to \mathcal{H}_v \) (or \( \boldsymbol{e}^{(t)}: \mathcal{T} \to \mathcal{H}_t \)) such that the learnt representation \( \boldsymbol{h}^{(v)} = \boldsymbol{e}^{(v)}(\boldsymbol{x}^{(v)}) \) (or \( \boldsymbol{h}^{(t)} = \boldsymbol{e}^{(t)}(\boldsymbol{x}^{(t)}) \)) captures essential information about the input. Remarkably, it was observed, in both <i>computer vision</i> (CV) and <i>natural language processing</i> (NLP) that such encoders trained on very large scale heterogeneous data can be effective for many downstream tasks (e.g., via linear projection, finetuning, etc.) (<a href="#devlin2018bert">Devlin et al., 2018</a>, <a href='#he2022masked'>He et al., 2022</a>). This phase of learning is often referred to as <i>pretraining</i> and the final model is referred to as a <i>foundation model</i>.
-      </p>
-      
-      <p>
-        Foundation models initially focused on developing "universal" encoders capable of extracting meaningful representations from unimodal data—be it images, videos, or text—in diverse contexts. Self-supervised learning techniques dominate the state-of-the-art in unimodal representation learning, where the unsupervised data is modified to fit the supervised learning framework (<a href="#devlin2018bert">Devlin et al., 2018</a>, <a href='#he2022masked'>He et al., 2022</a>). The primary goal of these models is to excel at various unimodal downstream tasks (with small modifications). For text, this includes sentiment classification, question answering, and text retrieval. For images, tasks such as image classification, object detection, and segmentation are common. Despite their unimodal nature, these models play a crucial role in multimodal learning. In the following subsections, we will explore some of the key unimodal encoders that have been instrumental in constructing multimodal models.
-      </p>
-      
-      <h3 id="text-encoders">Text Encoders</h3>
-
-      <h5>Bidirectional Encoder Representations from Transformers (BERT)</h5>
-      
-      <!-- <h2>BERT: Bidirectional Encoder Representations from Transformers</h2> -->
-
-<p>BERT <a href="#devlin2018bert">(Devlin et al., 2018)</a> is a widely adopted encoder model for text data. It uses powerful pre-training approach that allows the model to understand context from both left and right sides of a word simultaneously.</p>
-
-<p>BERT's architecture is based on the Transformer model, specifically using only the encoder portion. It consists of multiple layers of bidirectional Transformer blocks.
-
-<p>In the pre-training stage, BERT is trained on a large corpus of unlabeled text data using two unsupervised tasks:</p>
-
-<ul>
-  <li><strong>Masked Language Model (MLM):</strong> Given an input sequence, BERT randomly masks 15% of the tokens and attempts to predict these masked tokens based on the surrounding context. This task forces the model to learn bidirectional context.</li>
-  <li><strong>Next Sentence Prediction (NSP):</strong> The model predicts whether a given sentence pair appears consecutively in the original text. This task helps BERT understand the relationship between sentences.</li>
-</ul>
-
-<p>BERT uses special tokens to structure its input:</p>
-
-<ul>
-  <li>[CLS] at the start of each sequence (used for classification tasks)</li>
-  <li>[SEP] to separate sentences</li>
-  <li>[MASK] for the MLM task</li>
-</ul>
-
-<div style="text-align: center;">
-  <img src="../assets/images/blogs/vlm/bert_pretraining.png" alt="BERT Architecture" style="width: 50%; display: inline-block;"/>
-  <figcaption data-label="Figure 5">BERT Architecture <em>(Source: <a href="#devlin2018bert">(Devlin et al., 2018)</a>)</em>. The [CLS] token output is used for classification tasks, while other token outputs can be used for token-level tasks like named entity recognition.</figcaption>
-</div>
-
-<p>After pre-training, BERT can be fine-tuned on various downstream NLP tasks with minimal task-specific modifications, making it a versatile and powerful tool in NLP.</p>
-      
-      <!-- <p>BERT <a href="devlin2018bert">(Devlin et al., 2018)</a> is one of the most widely adopted encoder models for text data. In the pre-training stage, a transformer encoder is trained on a large scale of unlabeled text for the following tasks:</p>
-      <ul>
-          <li><strong>Masked Language Model (MLM):</strong> Given an input sequence, randomly mask some words and predict the masked words.</li>
-          <li><strong>Next Sentence Prediction (NSP):</strong> Given two sentences, predict if the second sentence follows the first sentence.</li>
-      </ul>
-      <div style="text-align: center;">
-        <img src="../assets/images/blogs/vlm/bert_pretraining.png" alt="Bert Architecture" style="width: 50%; display: inline-block;"/>
-      <figcaption data-label="Figure 5"> BERT Architecture <em>(Source: <a href="devlin2018bert">(Devlin et al., 2018)</a>) </em>. A special classification token [CLS] is pre-pended to the input sequence. The output of the [CLS] token is used for classification tasks.</figcaption>
-      </div> -->
-  
-      <h5>Text-to-Text Transfer Transformer (T5)</h5>
-      <p>T5 (Text-to-Text Transfer Transformer) <a href="#raffel2020exploring">(Raffel et al., 2020)</a> is another powerful text encoder that is trained on a unified text-to-text framework. The most important difference between the T5 model with respect to then existing models is that all NLP tasks are cast as text-to-text tasks, where the input and output are both text. This approach allows T5 to handle a wide range of NLP tasks with a single model architecture, facilitating better transfer learning and simplifying the process of applying the model to new tasks.</p>
-
-      <div style="text-align: center;">
-      <img src="../assets/images/blogs/vlm/t5_tasks.png" alt="T5 Architecture" style="width: 70%; display: inline-block;"/>
-      <figcaption data-label="Figure 5"> T5 Architecture <em>(Source: <a href="#raffel2020exploring">(Raffel et al., 2020)</a>)</em>. All NLP tasks are cast as text-to-text tasks, demonstrating the model's versatility across various language processing problems.</figcaption>
-      </div>
-      </br>
-      <p>The key characteristics of T5 are as follows:</p>
-      <ol>
-          <li><strong>Unified Framework:</strong> All NLP tasks are cast as text-to-text tasks.</li>
-          <li><strong>Architecture:</strong> Transformer encoder-decoder architecture instead of the encoder-only architecture of BERT.</li>
-          <li><strong>Pre-training:</strong> Pre-trained on a large-scale dataset (Colossal Clean Common Crawl) using masked-LM and next word prediction objectives.</li>
-          <li><strong>Fine-tuning:</strong> Fine-tuned on downstream tasks using a text-to-text framework (minimal or no change to the architecture).</li>
-      </ol>
-
-      <p>T5's innovative approach to unifying NLP tasks and its powerful pre-training on a massive dataset have made it a significant milestone in the development of language models, paving the way for more flexible and generalizable NLP systems.</p>
-
-      <!-- <p>T5 <a href="raffel2020exploring">(Raffel et al., 2020)</a> is another powerful text encoder that is trained on a unified text-to-text framework. The most important difference between the T5 model with respect to then existing models is that  all NLP tasks are cast as text-to-text tasks, where the input and output are both text.</p>
-      <div style="text-align: center;">
-        <img src="../assets/images/blogs/vlm/t5_tasks.png" alt="T5 Architecture" style="width: 70%; display: inline-block;"/>
-      <figcaption data-label="Figure 5"> BERT Architecture <em>(Source: <a href="raffel2020exploring">(Raffel et al., 2020)</a>)</em>. T5 Architecture. All NLP tasks are cast as text-to-text tasks. </figcaption>
-      </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vision Language Representation Learning by Sagar Shrestha">
+    <meta name="author" content="Sagar Shrestha">
+    <title>Vision Language Representation Learning | Sagar Shrestha</title>
     
-    </br>
-      <p>The key characteristics of T5 are as follows:</p>
-      <ol>
-          <li><strong>Unified Framework:</strong> All NLP tasks are cast as text-to-text tasks.</li>
-          <li><strong>Architecture:</strong> Transformer encoder-decoder architecture instead of the encoder-only architecture of BERT.</li>
-          <li><strong>Pre-training:</strong> Pre-trained on a large-scale dataset (Colossal Clean Common Crawl) using masked-LM and next word prediction objectives.</li>
-          <li><strong>Fine-tuning:</strong> Fine-tuned on downstream tasks using a text-to-text framework (minimal or no change to the architecture).</li>
-      </ol>
-      <p>These models, BERT and T5, represent significant advancements in unimodal representation learning for text, leveraging large-scale pre-training and versatile architectures to achieve high performance on various NLP tasks.</p>
-   -->
-      
-      <h3 id="vision-encoders">Vision Encoders</h3>
-
-      <h4 id="discrete-representation">Discrete Representations</h4>
-  
-      <h5>Vector Quantized-Variational AutoEncoder (VQ-VAE)</h5>
-
-
-      
-      <p>The idea of VQ-VAE (<a href="#vandeoord2017neural" target="_blank">(Van Den Oord et al., 2017)</a>) is to learn a VAE with discrete latent space. VQ-VAE is constructed as follows:</p>
-      <p>First, consider the VAE framework. Let \( q(\boldsymbol{z}|\boldsymbol{x}) \) be the posterior and \( p(\boldsymbol{x}|\boldsymbol{z}) \) be the likelihood. The encoder neural network is denoted by \( \boldsymbol{z}_e \). The encoder tries to map images into one of the \(K\) embedding vectors represented by \( \boldsymbol{e}_1, \dots, \boldsymbol{e}_K \). The posterior \( q(\boldsymbol{z}|\boldsymbol{x}) \) is modeled as a categorical distribution over \( \boldsymbol{e}_1, \dots, \boldsymbol{e}_K \), and is parameterized as follows:</p>
-      <p style="text-align: center;">
-          \( q(\boldsymbol{z} = \boldsymbol{e}_k | \boldsymbol{x}) = \begin{cases}
-              1 & \text{if } k = \arg\min_{j}  \| \boldsymbol{z}_e(\boldsymbol{x}) - \boldsymbol{e}_j \| \\
-              0 & \text{otherwise}
-          \end{cases} \)
-      </p>
-      <p>Now, denote by \( \boldsymbol{z}_q(\boldsymbol{x}) = \boldsymbol{e}_{\arg\min_{j}  \| \boldsymbol{z}_e(\boldsymbol{x}) - \boldsymbol{e}_j \|} \), the quantized latent variable. VQ-VAE assumes that the prior \( p(\boldsymbol{z}) \) is a uniform distribution over \( \boldsymbol{e}_1, \dots, \boldsymbol{e}_K \). Then, the KL-term of the VAE loss becomes a constant \( KL(q(\boldsymbol{z}|\boldsymbol{x}) || p(\boldsymbol{z})) = \log K \), which avoids posterior collapse by construction. Finally, the objective is to minimize the following loss:</p>
-      <p style="text-align: center;">
-          \( \mathcal{L}(\boldsymbol{x}) = \| \boldsymbol{x} - \boldsymbol{z}_q(\boldsymbol{x}) \|^2 + \| {\rm sg} [\boldsymbol{z}_e(\boldsymbol{x})] - \boldsymbol{e} \|^2 + \| \boldsymbol{z}_e(\boldsymbol{x}) - {\rm sg} [ \boldsymbol{e}] \|^2 \),
-      </p>
-      <p>where \( {\rm sg}[\cdot] \) is the stop gradient operator.</p>
-      <p>After VAE training, the uniform prior is discarded and a new \( p(z) \) is learned using the distribution of \( \boldsymbol{z}_q(\boldsymbol{x}) \) with PixelCNN (an autoregressive model for pixel generation) <a href="#salimans2017pixelcnn">(Salimans et al., 2017)</a>.</p>
-      <div style="text-align: center;">
-          <img src="../assets/images/blogs/vlm/vq_vae_illus.png" alt="VQ-VAE Architecture" style="width: 100%; display: inline-block;"/>
-          <figcaption data-label="Figure 1">VQ-VAE Architecture <em>(Source: <a href="#vandeoord2017neural" target="_blank">Van Den Oord et al., 2017</a>)</em>.</figcaption>
-      </div>
-  
-      <h5>Vector Quantized-Generative Adversarial Network (VQ-GAN)</h5>
-      <p>VQ-GAN (<a href="#esser2021taming" target="_blank">(Esser et al., 2021)</a>) makes several changes on top of VQ-VAE. Mainly, it replaces the VAE decoder with a GAN generator, adds an adversarial loss for the generator, and uses a transformer decoder instead of PixelCNN for learning the prior.</p>
-      <div style="text-align: center;">
-          <img src="../assets/images/blogs/vlm/vq_gan.png" alt="VQ-GAN Architecture" style="width: 100%; display: inline-block;"/>
-          <figcaption data-label="Figure 2">VQ-GAN Architecture <em>(Source: <a href="#esser2021taming" target="_blank">Esser et al., 2021</a>)</em>.</figcaption>
-      </div>
-
-
-      <h4 id="continuous-representations">Continuous Representations</h4>
-
-      <h5>Vision Transformer (ViT)</h5>
-      <p>The Vision Transformer is the most widely adopted architecture for vision encoders used in multimodal learning. The main idea of the Vision Transformer is to treat an image as a sequence of tokens and use transformer to learn representations. To that end, an image is divided into fixed-size non-overlapping patches. These patches are then flattened and projected into a sequence of vectors, similar to token embeddings in language models. A [CLS] token \( \boldsymbol{x}_{{\rm [CLS]}} \) is prepended to the input sequence, and \( \boldsymbol{h}_{\rm [CLS]} \) is used as the representation of the image.</p>
-      <div style="text-align: center;">
-          <img src="../assets/images/blogs/vlm/vit.png" alt="Vision Transformer Architecture" style="width: 100%; display: inline-block;"/>
-          <figcaption data-label="Figure 3">Vision Transformer Architecture <em>(Source: <a href="#dosovitskiy2020image" target="_blank">Dosovitskiy et al., 2020</a>)</em>.</figcaption>
-      </div>
-  
-      <h5>Masked Autoencoders (MAE)</h5>
-      <p>Masked Autoencoder is a self-supervised representation learner, trained by predicting masked tokens just like BERTs. MAE, first, divides an image into fixed-size non-overlapping patches and randomly removes more than 75% of these patches. The remaining patches are fed into the Vision Transformer encoder. The encoded patches and mask tokens are then fed into the decoder. The training objective is the reconstruction loss between the original image and the reconstructed image. The output of the encoder can be used as the representation of the image.</p>
-      <div style="text-align: center;">
-          <img src="../assets/images/blogs/vlm/mae.png" alt="Masked Autoencoder Architecture" style="width: 70%; display: inline-block;"/>
-          <figcaption data-label="Figure 4">Masked Autoencoder Architecture <em>(Source: <a href="#he2022masked">He et al., 2022</a>)</em>.</figcaption>
-      </div>
-      
-      <h2 id="multimodal-representation-learning">Multimodal Representation Learning</h2>
-      
-      <!-- <h3>Contrastive Learning (CLIP, ALIGN, LiT, SigLIP, LliP)</h3> -->
-      <h5 id="contrastive-learning">Contrastive Language-Image Pre-training (CLIP)</h5>
-      Contrastive Language-Image Pre-training (CLIP) is one of the first large-scale multimodal representation learning approach. The researchers behind CLIP constructed an extensive dataset comprising 400 million image-text pairs, laying a robust foundation for their model. At its core, CLIP utilizes two main components: a vision encoder \((\boldsymbol{e}_v: \mathcal{V} \to \mathcal{H})\) and a text encoder \((\boldsymbol{e}_t: \mathcal{T} \to \mathcal{H})\). The vision encoder is based on a Vision Transformer (ViT) architecture, while the text encoder employs a decoder-based transformer.
-      The training objective of CLIP is designed to maximize the similarity between matched image-text pairs while minimizing the similarity between unmatched pairs. Specifically, for a batch of image-text pairs \((\boldsymbol{x}^{(v, i)}, \boldsymbol{x}^{(t, i)})_{i=1}^N\), the optimization problem can be formulated as:
-      \[ \min_{\boldsymbol{e}_v, \boldsymbol{e}_t} ~~ \sum_{i=1}^N  \left[ - \log \frac{\exp(\boldsymbol{h}^{(v, i)} \cdot \boldsymbol{h}^{(t, i)} / \tau)}{\sum_{j=1}^N \exp(\boldsymbol{h}^{(v, i)} \cdot \boldsymbol{h}^{(t, j)} / \tau)}  - \log \frac{\exp(\boldsymbol{h}^{(t, i)} \cdot \boldsymbol{h}^{(v, i)} / \tau)}{\sum_{j=1}^N \exp(\boldsymbol{h}^{(t, i)} \cdot \boldsymbol{h}^{(v, j)} / \tau)} \right] \]
-      This objective function encourages the model to learn meaningful representations that capture the common semantic information between images and their corresponding textual descriptions. CLIP was shown to have strong generalization capabilities for many vision tasks (e.g., zero-shot image classification). 
-      <div style="text-align: center;">
-      <img src="../assets/images/blogs/vlm/clip.png" alt="CLIP Architecture" style="width: 100%; display: inline-block;"/>
-      <figcaption data-label="Figure 1">CLIP Architecture <em>(Source: <a href="#radfort2021learning" target="_blank">Radford et al., 2021</a>)</em>.</figcaption>
-      </div>
-      <h5>LiT: Zero Shot Transfer with Locked-image text Tuning</h5>
-      LiT (Locked-image text Tuning) builds upon the foundation laid by CLIP while introducing some key innovations. Unlike CLIP, which trains both the vision and text encoders from scratch, LiT employs a supervised pre-trained vision encoder (ViT-g/14) and only trains the text encoder from scratch. This approach demonstrates that utilizing pre-trained vision encoders yields superior results compared to training both encoders from scratch.
-      LiT maintains the same contrastive learning objective as CLIP, focusing on maximizing the similarity between matched image-text pairs. The vision encoder used in LiT was pre-trained on JFT-3B, a massive dataset of 30 billion semi-automatically labeled images privately collected by Google. This pre-training on a diverse and extensive dataset contributes significantly to the model's performance and generalization capabilities.
-      <div style="text-align: center;">
-      <img src="../assets/images/blogs/vlm/lit.png" alt="LiT Architecture" style="width: 60%; display: inline-block;"/>
-      <figcaption data-label="Figure 2">LiT Performance <em>(Source: <a href="#zhai2022lit" target="_blank">Zhai et al., 2022</a>)</em>.</figcaption>
-      </div>
-      <h5>SigLIP: Sigmoid Loss for Language Image Pre-Training</h5>
-      SigLIP addresses some of the challenges faced by previous contrastive learning approaches like CLIP and LiT. These earlier methods suffered from significant memory and communication overhead due to their loss function design. For instance, CLIP required 12 days of training on 256 V100 GPUs. The primary issue stemmed from the need to materialize a large (B \times B) matrix of pairwise similarities to compute the loss, where B is the batch size (32k in CLIP's case).
-      SigLIP's key innovation lies in replacing the softmax function with a sigmoid in the loss function. This modification allows for more efficient computation and faster training. In SigLIP's approach, positive pairs \((\boldsymbol{x}^{(v,i)}, \boldsymbol{x}^{(t,i)})\) are assigned a label of 1, while negative pairs \((\boldsymbol{x}^{(v,i)}, \boldsymbol{x}^{(t,j)}), j \neq i\) are labeled as 0. The resulting loss function is:
-      \[ \min_{\boldsymbol{e}_v, \boldsymbol{e}_t} -\frac{1}{N}\sum_{i=1}^N \sum_{j=1}^N  \log \frac{1}{1 + \exp(- \mathbb{I}_{i=j} \boldsymbol{h}^{(v, i)} \cdot \boldsymbol{h}^{(t, j)} / \tau)} \]
-      This reformulation led to a significant reduction in training time, with SigLiT (the implementation of SigLIP) requiring only 2 days of training on 4 TPUv4s.
-      <div style="text-align: center;">
-      <img src="../assets/images/blogs/vlm/siglip2.png" alt="SigLIP Architecture 1" style="width: 45%; display: inline-block;"/>
-      <img src="../assets/images/blogs/vlm/siglip.png" alt="SigLIP Architecture 2" style="width: 45%; display: inline-block;"/>
-      <figcaption data-label="Figure 3">SigLIP Performance <em>(Source:<a href='#zhai2023siglip'> Zhai et al., 2023</a>)</em></figcaption>
-      </div>
-      <h5>Llip: Modeling Caption Diversity in Contrastive Vision-Language Pretraining</h5>
-      Llip introduces a novel approach to address the challenge of caption diversity in vision-language pretraining. Recognizing that a single image can have multiple valid captions, Llip proposed to modify the image representation based on the caption. This method allows the model to capture the nuanced relationships between images and their various textual descriptions more effectively.
-      In Llip's architecture, \(\boldsymbol{h}_{\rm [CLS]}^{(t, i)}\) represents the overall text embedding, and \((\boldsymbol{h}_n^{(v, i)})_{n=1}^{N_t}\) denotes the individual image patch embeddings of the i-th paired sample. The model employs a text query matrix \(\boldsymbol{W}_q^{(t)}\) and image key and value matrices \(\boldsymbol{W}_k^{(v)}\) and \(\boldsymbol{W}_v^{(v)}\). The attention mechanism is then applied as follows:
-
-        \[ \boldsymbol{\phi}_{ij} = {\rm softmax} \left( \left\{ 
-          \left( \boldsymbol{W}q^{(t)} \boldsymbol{h}_{\rm [CLS]}^{(t, j)} \right) \cdot \left( \boldsymbol{W}k^{(v)}\boldsymbol{h}_n^{(v, i)} \right)
-          \right\}_{n=1}^{N_v} \right) \]
-        
-        \[ \boldsymbol{z}^{(v)}_{ij} = \sum_{n=1}^{N_v} \phi_{ij} (n) \boldsymbol{W}_v \boldsymbol{h}_n^{(v, i)} \]
-      The resulting loss function for Llip is:
-      \[ \min_{\boldsymbol{e}_v, \boldsymbol{e}_t} -\frac{1}{N}\sum_{i=1}^N \sum_{j=1}^N  \log \frac{1}{1 + \exp(- \mathbb{I}{i=j} \boldsymbol{h}^{(v, i)} \cdot \boldsymbol{z}^{(v)}{ij} / \tau)} \]
-      <!-- This formulation allows Llip to better model the diversity of captions associated with a single image, leading to more robust and versatile multimodal representations. -->
-      
-      <div style="text-align: center;">
-      <img src="../assets/images/blogs/vlm/llip_illus.png" alt="Llip Architecture" style="width: 100%; display: inline-block;"/>
-      <figcaption data-label="Figure 4">Llip Architecture <em>(Source: <a href="#lavoie2024modeling" target="_blank">Lavoie et al., 2024</a>)</em>.</figcaption>
-      </div>
-      <div style="text-align: center;">
-      <img src="../assets/images/blogs/vlm/llip_ablation.png" alt="Llip Ablation Study" style="width: 50%; display: inline-block;"/>
-      <figcaption data-label="Figure 5">Llip Ablation Study <em>(Source: <a href="#lavoie2024modeling" target="_blank">Lavoie et al., 2024</a>)</em>.</figcaption>
-      </div>
-      The above ablation study shows that Llip results in slightly better performance over SigLIP. 
-
-        <br/>
-        <h2>References</h2>
-        <div id="devlin2018bert" style="margin-bottom: 10px">
-          <p><span style="color:blue;">[Devlin et al., 2018]</span> Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.</p>
-         </div>
-         
-         <div id="dosovitskiy2020image" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Dosovitskiy et al., 2020]</span> Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., et al. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.</p>
-         </div>
-         
-         <div id="esser2021taming" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Esser et al., 2021]</span> Esser, P., Rombach, R., & Ommer, B. (2021). Taming transformers for high-resolution image synthesis. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 12873-12883).</p>
-         </div>
-         
-         <div id="he2022masked" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[He et al., 2022]</span> He, K., Chen, X., Xie, S., Li, Y., Dollár, P., & Girshick, R. (2022). Masked autoencoders are scalable vision learners. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 16000-16009).</p>
-         </div>
-         
-         <div id="karamcheti2024prismatic" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Karamcheti et al., 2024]</span> Karamcheti, S., Nair, S., Balakrishna, A., Liang, P., Kollar, T., & Sadigh, D. (2024). Prismatic vlms: Investigating the design space of visually-conditioned language models. arXiv preprint arXiv:2402.07865.</p>
-         </div>
-         
-         <div id="lavoie2024modeling" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Lavoie et al., 2024]</span> Lavoie, S., Kirichenko, P., Ibrahim, M., Assran, M., Wildon, A. G., Courville, A., & Ballas, N. (2024). Modeling caption diversity in contrastive vision-language pretraining. arXiv preprint arXiv:2405.00740.</p>
-         </div>
-         
-         <div id="li2023leveraging" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Li et al., 2023]</span> Li, T., Bhardwaj, S., Tian, Y., Zhang, H., Barber, J., Katabi, D., Lajoie, G., Chang, H., & Krishnan, D. (2023). Leveraging unpaired data for vision-language generative models via cycle consistency. arXiv preprint arXiv:2310.03734.</p>
-         </div>
-         
-         <div id="liu2024visual" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Liu et al., 2024]</span> Liu, H., Li, C., Wu, Q., & Lee, Y. J. (2024). Visual instruction tuning. Advances in Neural Information Processing Systems, 36.</p>
-         </div>
-         
-         <div id="radford2021learning" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Radford et al., 2021]</span> Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., et al. (2021). Learning transferable visual models from natural language supervision. In International Conference on Machine Learning (pp. 8748-8763). PMLR.</p>
-         </div>
-         
-         <div id="raffel2020exploring" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Raffel et al., 2020]</span> Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. J. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of Machine Learning Research, 21(140), 1-67.</p>
-         </div>
-         
-         <div id="salimans2017pixelcnn" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Salimans et al., 2017]</span> Salimans, T., Karpathy, A., Chen, X., & Kingma, D. P. (2017). Pixelcnn++: Improving the pixelcnn with discretized logistic mixture likelihood and other modifications. arXiv preprint arXiv:1701.05517.</p>
-         </div>
-         
-         <div id="tsimpoukelli2021multimodal" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Tsimpoukelli et al., 2021]</span> Tsimpoukelli, M., Menick, J. L., Cabi, S., Eslami, S., Vinyals, O., & Hill, F. (2021). Multimodal few-shot learning with frozen language models. Advances in Neural Information Processing Systems, 34, 200-212.</p>
-         </div>
-         
-         <div id="vandeoord2017neural" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Van Den Oord et al., 2017]</span> Van Den Oord, A., Vinyals, O., et al. (2017). Neural discrete representation learning. Advances in Neural Information Processing Systems, 30.</p>
-         </div>
-         
-         <div id="zhai2022lit" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Zhai et al., 2022]</span> Zhai, X., Wang, X., Mustafa, B., Steiner, A., Keysers, D., Kolesnikov, A., & Beyer, L. (2022). Lit: Zero-shot transfer with locked-image text tuning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 18123-18133).</p>
-         </div>
-        
-        <div id="zhai2023siglip" style="margin-bottom: 10px;">
-          <p><span style="color:blue;">[Zhai et al., 2023]</span> Zhai, X., Mustafa, B., Kolesnikov, A., & Beyer, L. (2023). Sigmoid loss for language image pre-training. In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 11975-11986).</p>
-          </div>
-
-          </article>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- MathJax for mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    
+    <!-- Blog Styles -->
+    <link rel="stylesheet" href="../blog-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">Sagar Shrestha</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../index.html#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="../index.html#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="../assets/cv.pdf" class="nav-link" target="_blank">CV</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
         </div>
-        </div>
-      </div>
+    </nav>
 
-   
-  <script src="../assets/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
-  <script id="search-hit-fuse-template" type="text/x-template">
-    <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
+    <!-- Blog Container -->
+    <div class="blog-container">
+        <!-- Back Button -->
+        <a href="../index.html#blogs" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Blogs
+        </a>
+
+        <!-- Blog Header -->
+        <header class="blog-header">
+            <h1 class="blog-title">Vision Language Representation Learning</h1>
+            <div class="blog-meta">
+                <div class="blog-date">
+                    <i class="fas fa-calendar"></i>
+                    June 28, 2024
+                </div>
+                <div class="blog-reading-time">
+                    <i class="fas fa-clock"></i>
+                    25 min read
+                </div>
+            </div>
+            <div class="blog-tags">
+                <span class="blog-tag">Vision Language Models</span>
+                <span class="blog-tag">Multimodal Learning</span>
+                <span class="blog-tag">Deep Learning</span>
+                <span class="blog-tag">Computer Vision</span>
+            </div>
+        </header>
+        <!-- Table of Contents -->
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ul class="toc-list">
+                <li class="toc-item level-1">
+                    <a href="#unimodal-representation-learning" class="toc-link" style="font-size: 1.3em;">Unimodal Representation Learning: Part I</a>
+                    <ul class="toc-sublist">
+                        <li class="toc-item level-2" style="margin-left: 20px;">
+                            <a href='#text-encoders' class="toc-link" style="font-size: 1.15em;">Text Encoders (BERT, T5)</a>
+                        </li>
+                        <li class="toc-item level-2" style="margin-left: 20px;">
+                            <a href='#vision-encoders' class="toc-link" style="font-size: 1.15em;">Vision Encoders</a>
+                            <ul class="toc-sublist">
+                                <li class="toc-item level-3" style="margin-left: 40px;">
+                                    <a href='#discrete-representation' class="toc-link" style="font-size: 1em;">Discrete Representations (VQ-VAE, VQ-GAN)</a>
+                                </li>
+                                <li class="toc-item level-3" style="margin-left: 40px;">
+                                    <a href='#continuous-representation' class="toc-link" style="font-size: 1em;">Continuous Representations (SimCLR, MAE)</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="toc-item level-1">
+                    <a href='#multimodal-representation-learning' class="toc-link" style="font-size: 1.3em;">Multimodal Representation Learning: Part II</a>
+                    <ul class="toc-sublist">
+                        <li class="toc-item level-2" style="margin-left: 20px;">
+                            <a href='#contrastive-learning' class="toc-link" style="font-size: 1.15em;">Contrastive Learning (CLIP, ALIGN, LiT, SigLIP, LliP)</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-      </div>
+
+        <!-- Blog Content -->
+        <article class="blog-content">
+            <p><em>(The following article is derived from my reading group presentation on vision-language representation learning.)</em></p>
+            
+            <p>Vision-language representation learning has emerged as a pivotal area in artificial intelligence, bridging the gap between computer vision and natural language processing. From enhancing image search capabilities to enabling sophisticated AI assistants, vision-language models are revolutionizing how machines perceive and interact with the world. In this post, we'll explore the key components and recent advancements in this rapidly evolving field, covering the state-of-the-art vision language representation learners.</p>
+
+            <p>To facilitate the discussion, we introduce the following notation:</p>
+            <ul>
+                <li>\( x, \boldsymbol{x}, \boldsymbol{X}, \mathcal{X} \) denote a scalar, vector, and matrix, respectively.</li>
+                <li>\( x(i) \) denotes the \( i \)-th element of vector \( \boldsymbol{x} \).</li>
+                <li>\( ( \boldsymbol{x}_n^{(t)} )_{n=1}^{N_t} \) and \( ( \boldsymbol{x}_n^{(v)} )_{n=1}^{N_v} \) denote the input text sequence, and image patches, respectively.</li>
+                <li>\( ( \boldsymbol{h}_n^{(t)} )_{n=1}^{N_t} \) and \( ( \boldsymbol{h}_n^{(v)} )_{n=1}^{N_v} \) denote the corresponding text and image embeddings.</li>
+            </ul>
+
+            <section id="unimodal-representation-learning">
+                <h2>Unimodal Representation Learning</h2>
+                <p>Given an image domain \( \mathcal{V} \) (or a text domain \( \mathcal{T} \)), the goal of unimodal representation learning is to learn an encoder \( \boldsymbol{e}^{(v)}: \mathcal{V} \to \mathcal{H}_v \) (or \( \boldsymbol{e}^{(t)}: \mathcal{T} \to \mathcal{H}_t \)) such that the learnt representation \( \boldsymbol{h}^{(v)} = \boldsymbol{e}^{(v)}(\boldsymbol{x}^{(v)}) \) (or \( \boldsymbol{h}^{(t)} = \boldsymbol{e}^{(t)}(\boldsymbol{x}^{(t)}) \)) captures essential information about the input. Remarkably, it was observed, in both <i>computer vision</i> (CV) and <i>natural language processing</i> (NLP) that such encoders trained on very large scale heterogeneous data can be effective for many downstream tasks (e.g., via linear projection, finetuning, etc.) (<a href="#devlin2018bert">Devlin et al., 2018</a>, <a href='#he2022masked'>He et al., 2022</a>). This phase of learning is often referred to as <i>pretraining</i> and the final model is referred to as a <i>foundation model</i>.</p>
+                
+                <p>Foundation models initially focused on developing "universal" encoders capable of extracting meaningful representations from unimodal data—be it images, videos, or text—in diverse contexts. Self-supervised learning techniques dominate the state-of-the-art in unimodal representation learning, where the unsupervised data is modified to fit the supervised learning framework (<a href="#devlin2018bert">Devlin et al., 2018</a>, <a href='#he2022masked'>He et al., 2022</a>). The primary goal of these models is to excel at various unimodal downstream tasks (with small modifications). For text, this includes sentiment classification, question answering, and text retrieval. For images, tasks such as image classification, object detection, and segmentation are common. Despite their unimodal nature, these models play a crucial role in multimodal learning. In the following subsections, we will explore some of the key unimodal encoders that have been instrumental in constructing multimodal models.</p>
+
+                <h3 id="text-encoders">Text Encoders</h3>
+
+                <h4>Bidirectional Encoder Representations from Transformers (BERT)</h4>
+                <p>BERT <a href="#devlin2018bert">(Devlin et al., 2018)</a> is a widely adopted encoder model for text data. It uses powerful pre-training approach that allows the model to understand context from both left and right sides of a word simultaneously.</p>
+
+                <p>BERT's architecture is based on the Transformer model, specifically using only the encoder portion. It consists of multiple layers of bidirectional Transformer blocks.</p>
+
+                <p>In the pre-training stage, BERT is trained on a large corpus of unlabeled text data using two unsupervised tasks:</p>
+
+                <ul>
+                    <li><strong>Masked Language Model (MLM):</strong> Given an input sequence, BERT randomly masks 15% of the tokens and attempts to predict these masked tokens based on the surrounding context. This task forces the model to learn bidirectional context.</li>
+                    <li><strong>Next Sentence Prediction (NSP):</strong> The model predicts whether a given sentence pair appears consecutively in the original text. This task helps BERT understand the relationship between sentences.</li>
+                </ul>
+
+                <p>BERT uses special tokens to structure its input:</p>
+
+                <ul>
+                    <li>[CLS] at the start of each sequence (used for classification tasks)</li>
+                    <li>[SEP] to separate sentences</li>
+                    <li>[MASK] for the MLM task</li>
+                </ul>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/bert_pretraining.png" alt="BERT Architecture" style="width: 70%;"/>
+                    <figcaption>BERT Architecture <em>(Source: <a href="#devlin2018bert">(Devlin et al., 2018)</a>)</em>. The [CLS] token output is used for classification tasks, while other token outputs can be used for token-level tasks like named entity recognition.</figcaption>
+                </div>
+
+                <p>After pre-training, BERT can be fine-tuned on various downstream NLP tasks with minimal task-specific modifications, making it a versatile and powerful tool in NLP.</p>
+
+                <h4>Text-to-Text Transfer Transformer (T5)</h4>
+                <p>T5 (Text-to-Text Transfer Transformer) <a href="#raffel2020exploring">(Raffel et al., 2020)</a> is another powerful text encoder that is trained on a unified text-to-text framework. The most important difference between the T5 model with respect to then existing models is that all NLP tasks are cast as text-to-text tasks, where the input and output are both text. This approach allows T5 to handle a wide range of NLP tasks with a single model architecture, facilitating better transfer learning and simplifying the process of applying the model to new tasks.</p>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/t5_tasks.png" alt="T5 Architecture" style="width: 80%;"/>
+                    <figcaption>T5 Architecture <em>(Source: <a href="#raffel2020exploring">(Raffel et al., 2020)</a>)</em>. All NLP tasks are cast as text-to-text tasks, demonstrating the model's versatility across various language processing problems.</figcaption>
+                </div>
+
+                <p>The key characteristics of T5 are as follows:</p>
+                <ol>
+                    <li><strong>Unified Framework:</strong> All NLP tasks are cast as text-to-text tasks.</li>
+                    <li><strong>Architecture:</strong> Transformer encoder-decoder architecture instead of the encoder-only architecture of BERT.</li>
+                    <li><strong>Pre-training:</strong> Pre-trained on a large-scale dataset (Colossal Clean Common Crawl) using masked-LM and next word prediction objectives.</li>
+                    <li><strong>Fine-tuning:</strong> Fine-tuned on downstream tasks using a text-to-text framework (minimal or no change to the architecture).</li>
+                </ol>
+
+                <p>T5's innovative approach to unifying NLP tasks and its powerful pre-training on a massive dataset have made it a significant milestone in the development of language models, paving the way for more flexible and generalizable NLP systems.</p>
+
+                <h3 id="vision-encoders">Vision Encoders</h3>
+
+                <h4 id="discrete-representation">Discrete Representations</h4>
+
+                <h5>Vector Quantized-Variational AutoEncoder (VQ-VAE)</h5>
+                <p>The idea of VQ-VAE (<a href="#vandeoord2017neural">(Van Den Oord et al., 2017)</a>) is to learn a VAE with discrete latent space. VQ-VAE is constructed as follows:</p>
+                
+                <p>First, consider the VAE framework. Let \( q(\boldsymbol{z}|\boldsymbol{x}) \) be the posterior and \( p(\boldsymbol{x}|\boldsymbol{z}) \) be the likelihood. The encoder neural network is denoted by \( \boldsymbol{z}_e \). The encoder tries to map images into one of the \(K\) embedding vectors represented by \( \boldsymbol{e}_1, \dots, \boldsymbol{e}_K \). The posterior \( q(\boldsymbol{z}|\boldsymbol{x}) \) is modeled as a categorical distribution over \( \boldsymbol{e}_1, \dots, \boldsymbol{e}_K \), and is parameterized as follows:</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    \( q(\boldsymbol{z} = \boldsymbol{e}_k | \boldsymbol{x}) = \begin{cases}
+                        1 & \text{if } k = \arg\min_{j} \| \boldsymbol{z}_e(\boldsymbol{x}) - \boldsymbol{e}_j \| \\
+                        0 & \text{otherwise}
+                    \end{cases} \)
+                </div>
+                
+                <p>Now, denote by \( \boldsymbol{z}_q(\boldsymbol{x}) = \boldsymbol{e}_{\arg\min_{j} \| \boldsymbol{z}_e(\boldsymbol{x}) - \boldsymbol{e}_j \|} \), the quantized latent variable. VQ-VAE assumes that the prior \( p(\boldsymbol{z}) \) is a uniform distribution over \( \boldsymbol{e}_1, \dots, \boldsymbol{e}_K \). Then, the KL-term of the VAE loss becomes a constant \( KL(q(\boldsymbol{z}|\boldsymbol{x}) || p(\boldsymbol{z})) = \log K \), which avoids posterior collapse by construction. Finally, the objective is to minimize the following loss:</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    \( \mathcal{L}(\boldsymbol{x}) = \| \boldsymbol{x} - \boldsymbol{z}_q(\boldsymbol{x}) \|^2 + \| {\rm sg} [\boldsymbol{z}_e(\boldsymbol{x})] - \boldsymbol{e} \|^2 + \| \boldsymbol{z}_e(\boldsymbol{x}) - {\rm sg} [ \boldsymbol{e}] \|^2 \),
+                </div>
+                
+                <p>where \( {\rm sg}[\cdot] \) is the stop gradient operator.</p>
+                
+                <p>After VAE training, the uniform prior is discarded and a new \( p(z) \) is learned using the distribution of \( \boldsymbol{z}_q(\boldsymbol{x}) \) with PixelCNN (an autoregressive model for pixel generation) <a href="#salimans2017pixelcnn">(Salimans et al., 2017)</a>.</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/vq_vae_illus.png" alt="VQ-VAE Architecture" style="width: 100%;"/>
+                    <figcaption>VQ-VAE Architecture <em>(Source: <a href="#vandeoord2017neural">Van Den Oord et al., 2017</a>)</em>.</figcaption>
+                </div>
+
+                <h5>Vector Quantized-Generative Adversarial Network (VQ-GAN)</h5>
+                <p>VQ-GAN (<a href="#esser2021taming">(Esser et al., 2021)</a>) makes several changes on top of VQ-VAE. Mainly, it replaces the VAE decoder with a GAN generator, adds an adversarial loss for the generator, and uses a transformer decoder instead of PixelCNN for learning the prior.</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/vq_gan.png" alt="VQ-GAN Architecture" style="width: 100%;"/>
+                    <figcaption>VQ-GAN Architecture <em>(Source: <a href="#esser2021taming">Esser et al., 2021</a>)</em>.</figcaption>
+                </div>
+
+                <h4 id="continuous-representations">Continuous Representations</h4>
+
+                <h5>Vision Transformer (ViT)</h5>
+                <p>The Vision Transformer is the most widely adopted architecture for vision encoders used in multimodal learning. The main idea of the Vision Transformer is to treat an image as a sequence of tokens and use transformer to learn representations. To that end, an image is divided into fixed-size non-overlapping patches. These patches are then flattened and projected into a sequence of vectors, similar to token embeddings in language models. A [CLS] token \( \boldsymbol{x}_{{\rm [CLS]}} \) is prepended to the input sequence, and \( \boldsymbol{h}_{\rm [CLS]} \) is used as the representation of the image.</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/vit.png" alt="Vision Transformer Architecture" style="width: 100%;"/>
+                    <figcaption>Vision Transformer Architecture <em>(Source: <a href="#dosovitskiy2020image">Dosovitskiy et al., 2020</a>)</em>.</figcaption>
+                </div>
+
+                <h5>Masked Autoencoders (MAE)</h5>
+                <p>Masked Autoencoder is a self-supervised representation learner, trained by predicting masked tokens just like BERTs. MAE, first, divides an image into fixed-size non-overlapping patches and randomly removes more than 75% of these patches. The remaining patches are fed into the Vision Transformer encoder. The encoded patches and mask tokens are then fed into the decoder. The training objective is the reconstruction loss between the original image and the reconstructed image. The output of the encoder can be used as the representation of the image.</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/mae.png" alt="Masked Autoencoder Architecture" style="width: 80%;"/>
+                    <figcaption>Masked Autoencoder Architecture <em>(Source: <a href="#he2022masked">He et al., 2022</a>)</em>.</figcaption>
+                </div>
+            </section>
+
+            <section id="multimodal-representation-learning">
+                <h2>Multimodal Representation Learning</h2>
+
+                <h3 id="contrastive-learning">Contrastive Language-Image Pre-training (CLIP)</h3>
+                <p>Contrastive Language-Image Pre-training (CLIP) is one of the first large-scale multimodal representation learning approach. The researchers behind CLIP constructed an extensive dataset comprising 400 million image-text pairs, laying a robust foundation for their model. At its core, CLIP utilizes two main components: a vision encoder \((\boldsymbol{e}_v: \mathcal{V} \to \mathcal{H})\) and a text encoder \((\boldsymbol{e}_t: \mathcal{T} \to \mathcal{H})\). The vision encoder is based on a Vision Transformer (ViT) architecture, while the text encoder employs a decoder-based transformer.</p>
+                
+                <p>The training objective of CLIP is designed to maximize the similarity between matched image-text pairs while minimizing the similarity between unmatched pairs. Specifically, for a batch of image-text pairs \((\boldsymbol{x}^{(v, i)}, \boldsymbol{x}^{(t, i)})_{i=1}^N\), the optimization problem can be formulated as:</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    \[ \min_{\boldsymbol{e}_v, \boldsymbol{e}_t} ~~ \sum_{i=1}^N \left[ - \log \frac{\exp(\boldsymbol{h}^{(v, i)} \cdot \boldsymbol{h}^{(t, i)} / \tau)}{\sum_{j=1}^N \exp(\boldsymbol{h}^{(v, i)} \cdot \boldsymbol{h}^{(t, j)} / \tau)} - \log \frac{\exp(\boldsymbol{h}^{(t, i)} \cdot \boldsymbol{h}^{(v, i)} / \tau)}{\sum_{j=1}^N \exp(\boldsymbol{h}^{(t, i)} \cdot \boldsymbol{h}^{(v, j)} / \tau)} \right] \]
+                </div>
+                
+                <p>This objective function encourages the model to learn meaningful representations that capture the common semantic information between images and their corresponding textual descriptions. CLIP was shown to have strong generalization capabilities for many vision tasks (e.g., zero-shot image classification).</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/clip.png" alt="CLIP Architecture" style="width: 100%;"/>
+                    <figcaption>CLIP Architecture <em>(Source: <a href="#radfort2021learning">Radford et al., 2021</a>)</em>.</figcaption>
+                </div>
+
+                <h4>LiT: Zero Shot Transfer with Locked-image text Tuning</h4>
+                <p>LiT (Locked-image text Tuning) builds upon the foundation laid by CLIP while introducing some key innovations. Unlike CLIP, which trains both the vision and text encoders from scratch, LiT employs a supervised pre-trained vision encoder (ViT-g/14) and only trains the text encoder from scratch. This approach demonstrates that utilizing pre-trained vision encoders yields superior results compared to training both encoders from scratch.</p>
+                
+                <p>LiT maintains the same contrastive learning objective as CLIP, focusing on maximizing the similarity between matched image-text pairs. The vision encoder used in LiT was pre-trained on JFT-3B, a massive dataset of 30 billion semi-automatically labeled images privately collected by Google. This pre-training on a diverse and extensive dataset contributes significantly to the model's performance and generalization capabilities.</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/lit.png" alt="LiT Architecture" style="width: 70%;"/>
+                    <figcaption>LiT Performance <em>(Source: <a href="#zhai2022lit">Zhai et al., 2022</a>)</em>.</figcaption>
+                </div>
+
+                <h4>SigLIP: Sigmoid Loss for Language Image Pre-Training</h4>
+                <p>SigLIP addresses some of the challenges faced by previous contrastive learning approaches like CLIP and LiT. These earlier methods suffered from significant memory and communication overhead due to their loss function design. For instance, CLIP required 12 days of training on 256 V100 GPUs. The primary issue stemmed from the need to materialize a large (B × B) matrix of pairwise similarities to compute the loss, where B is the batch size (32k in CLIP's case).</p>
+                
+                <p>SigLIP's key innovation lies in replacing the softmax function with a sigmoid in the loss function. This modification allows for more efficient computation and faster training. In SigLIP's approach, positive pairs \((\boldsymbol{x}^{(v,i)}, \boldsymbol{x}^{(t,i)})\) are assigned a label of 1, while negative pairs \((\boldsymbol{x}^{(v,i)}, \boldsymbol{x}^{(t,j)}), j \neq i\) are labeled as 0. The resulting loss function is:</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    \[ \min_{\boldsymbol{e}_v, \boldsymbol{e}_t} -\frac{1}{N}\sum_{i=1}^N \sum_{j=1}^N \log \frac{1}{1 + \exp(- \mathbb{I}_{i=j} \boldsymbol{h}^{(v, i)} \cdot \boldsymbol{h}^{(t, j)} / \tau)} \]
+                </div>
+                
+                <p>This reformulation led to a significant reduction in training time, with SigLiT (the implementation of SigLIP) requiring only 2 days of training on 4 TPUv4s.</p>
+                
+                <div style="display: flex; justify-content: space-around; margin: 2rem 0;">
+                    <figure style="text-align: center;">
+                        <img src="../assets/images/blogs/vlm/siglip2.png" alt="SigLIP Architecture 1" style="max-width: 45%;"/>
+                        <img src="../assets/images/blogs/vlm/siglip.png" alt="SigLIP Architecture 2" style="max-width: 45%;"/>
+                        <figcaption>SigLIP Performance <em>(Source: <a href='#zhai2023siglip'> Zhai et al., 2023</a>)</em></figcaption>
+                    </figure>
+                </div>
+
+                <h4>Llip: Modeling Caption Diversity in Contrastive Vision-Language Pretraining</h4>
+                <p>Llip introduces a novel approach to address the challenge of caption diversity in vision-language pretraining. Recognizing that a single image can have multiple valid captions, Llip proposed to modify the image representation based on the caption. This method allows the model to capture the nuanced relationships between images and their various textual descriptions more effectively.</p>
+                
+                <p>In Llip's architecture, \(\boldsymbol{h}_{\rm [CLS]}^{(t, i)}\) represents the overall text embedding, and \((\boldsymbol{h}_n^{(v, i)})_{n=1}^{N_t}\) denotes the individual image patch embeddings of the i-th paired sample. The model employs a text query matrix \(\boldsymbol{W}_q^{(t)}\) and image key and value matrices \(\boldsymbol{W}_k^{(v)}\) and \(\boldsymbol{W}_v^{(v)}\). The attention mechanism is then applied as follows:</p>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    \[ \boldsymbol{\phi}_{ij} = {\rm softmax} \left( \left\{ 
+                    \left( \boldsymbol{W}q^{(t)} \boldsymbol{h}_{\rm [CLS]}^{(t, j)} \right) \cdot \left( \boldsymbol{W}k^{(v)}\boldsymbol{h}_n^{(v, i)} \right)
+                    \right\}_{n=1}^{N_v} \right) \]
+                    
+                    \[ \boldsymbol{z}^{(v)}_{ij} = \sum_{n=1}^{N_v} \phi_{ij} (n) \boldsymbol{W}_v \boldsymbol{h}_n^{(v, i)} \]
+                </div>
+                
+                <p>The resulting loss function for Llip is:</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    \[ \min_{\boldsymbol{e}_v, \boldsymbol{e}_t} -\frac{1}{N}\sum_{i=1}^N \sum_{j=1}^N \log \frac{1}{1 + \exp(- \mathbb{I}_{i=j} \boldsymbol{h}^{(v, i)} \cdot \boldsymbol{z}^{(v)}_{ij} / \tau)} \]
+                </div>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/llip_illus.png" alt="Llip Architecture" style="width: 100%;"/>
+                    <figcaption>Llip Architecture <em>(Source: <a href="#lavoie2024modeling">Lavoie et al., 2024</a>)</em>.</figcaption>
+                </div>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <img src="../assets/images/blogs/vlm/llip_ablation.png" alt="Llip Ablation Study" style="width: 60%;"/>
+                    <figcaption>Llip Ablation Study <em>(Source: <a href="#lavoie2024modeling">Lavoie et al., 2024</a>)</em>.</figcaption>
+                </div>
+                
+                <p>The above ablation study shows that Llip results in slightly better performance over SigLIP.</p>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>Vision-language representation learning has evolved rapidly from simple unimodal encoders to sophisticated multimodal systems. The progression from BERT and ViT to CLIP and its variants demonstrates the power of contrastive learning in bridging vision and language modalities. These advances have opened new possibilities for AI systems that can understand and reason about both visual and textual information, paving the way for more intuitive human-AI interactions.</p>
+            </section>
+
+            <section>
+                <h2>References</h2>
+                <div id="devlin2018bert" style="margin-bottom: 10px">
+                    <p><span style="color:blue;">[Devlin et al., 2018]</span> Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.</p>
+                </div>
+                
+                <div id="dosovitskiy2020image" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Dosovitskiy et al., 2020]</span> Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., et al. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929.</p>
+                </div>
+                
+                <div id="esser2021taming" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Esser et al., 2021]</span> Esser, P., Rombach, R., & Ommer, B. (2021). Taming transformers for high-resolution image synthesis. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 12873-12883).</p>
+                </div>
+                
+                <div id="he2022masked" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[He et al., 2022]</span> He, K., Chen, X., Xie, S., Li, Y., Dollár, P., & Girshick, R. (2022). Masked autoencoders are scalable vision learners. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 16000-16009).</p>
+                </div>
+                
+                <div id="lavoie2024modeling" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Lavoie et al., 2024]</span> Lavoie, S., Kirichenko, P., Ibrahim, M., Assran, M., Wildon, A. G., Courville, A., & Ballas, N. (2024). Modeling caption diversity in contrastive vision-language pretraining. arXiv preprint arXiv:2405.00740.</p>
+                </div>
+                
+                <div id="raffel2020exploring" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Raffel et al., 2020]</span> Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., Zhou, Y., Li, W., & Liu, P. J. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of Machine Learning Research, 21(140), 1-67.</p>
+                </div>
+                
+                <div id="radfort2021learning" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Radford et al., 2021]</span> Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., et al. (2021). Learning transferable visual models from natural language supervision. In International conference on machine learning (pp. 8748-8763). PMLR.</p>
+                </div>
+                
+                <div id="vandeoord2017neural" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Van Den Oord et al., 2017]</span> Van Den Oord, A., Vinyals, O., & Kavukcuoglu, K. (2017). Neural discrete representation learning. Advances in neural information processing systems, 30.</p>
+                </div>
+                
+                <div id="zhai2022lit" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Zhai et al., 2022]</span> Zhai, X., Wang, X., Mustafa, B., Steiner, A., Keysers, D., Kolesnikov, A., & Beyer, L. (2022). LiT: Zero-shot transfer with locked-image text tuning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 18123-18133).</p>
+                </div>
+                
+                <div id="zhai2023siglip" style="margin-bottom: 10px;">
+                    <p><span style="color:blue;">[Zhai et al., 2023]</span> Zhai, X., Mustafa, B., Kolesnikov, A., & Beyer, L. (2023). Sigmoid loss for language image pre-training. In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 11975-11986).</p>
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer class="blog-footer">
+            <p>&copy; 2025 Sagar Shrestha. All rights reserved.</p>
+        </footer>
     </div>
-  </script>
-  <script src="../assets/fuse.min.js"
-    integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw=="
-    crossorigin="anonymous"></script>
-  <script src="../assets/jquery.mark.min.js"
-    integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg=="
-    crossorigin="anonymous"></script>
-  <script id="page-data" type="application/json">{"use_headroom":false}</script>
-  <script src="../assets/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
-  <div id="modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Cite</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span></button>
-        </div>
-        <div class="modal-body">
-          <pre><code></code></pre>
-        </div>
-        <div class="modal-footer"><a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank"><i
-              class="fas fa-copy"></i> Copy</a>
-          <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank"><i
-              class="fas fa-download"></i> Download</a>
-          <div id="modal-error"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="../assets/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script><iframe
-    id="netlify-identity-widget" title="Netlify identity widget"
-    style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; "
-    src="../assets/a.html"></iframe>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        }
+
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
-
 </html>
