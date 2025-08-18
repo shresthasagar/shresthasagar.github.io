@@ -231,7 +231,7 @@ section {
 }
 
 .section-title {
-    text-align: center;
+      text-align: center;
     margin-bottom: 3rem;
     color: var(--text-color);
     position: relative;
@@ -248,20 +248,180 @@ section {
     background: var(--primary-color);
 }
 
-/* About Section */
-.about {
-    background: var(--section-bg);
+/* Combined Profile & Timeline Section */
+.profile-timeline {
+    padding: 80px 0 40px;
+    background: var(--bg-color);
+    min-height: 100vh;
 }
 
-.about-content {
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
     max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.about-content p {
-    font-size: 1.1rem;
+.profile-image-container {
+    flex-shrink: 0;
+}
+
+.profile-timeline .profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    flex: 1;
+    padding-top: 1rem;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.profile-tagline {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    /* font-style: italic; */
+}
+
+.profile-description {
+    font-size: 1rem;
+    color: var(--text-light);
     margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Timeline Section */
+.timeline { background: var(--section-bg); }
+
+.timeline .container { max-width: 1000px; }
+
+/* Timeline within profile-timeline */
+.profile-timeline .timeline-grid {
+    background: none;
+    padding: 0;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: 160px 100px 1fr; /* year | marker | card */
+    gap: 1rem 2rem;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(160px + 50px); /* center of marker column */
+    width: 2px;
+    height: 100%;
+    /* dotted vertical line with evenly spaced dots */
+    background-image: radial-gradient(var(--border-color) 3px, transparent 3px);
+    background-size: 2px 14px;
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+.timeline-year {
+    color: var(--text-light);
+    font-weight: 500;
+    padding-top: 0.4rem;
+    white-space: nowrap;
+    font-size: 0.95rem;
+}
+
+.timeline-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    min-height: 48px; /* allow variable heights based on logo */
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.timeline-logo {
+    width: 100%;
+    height: auto; /* preserve aspect ratio */
+    max-height: 72px; /* keep within lane and clearly visible */
+    object-fit: contain;
+    display: block;
+    border: 0;
+    border-radius: 0;
+}
+
+.timeline-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-light);
+    padding: 1rem 1.25rem;
+    position: relative;
+    max-width: 600px; /* Constrain text width for better readability */
+}
+
+.timeline-card p { margin: 0; }
+
+/* horizontal connector from vertical line to card */
+.timeline-card::before { content: none; }
+
+/* dot marker on the horizontal connector */
+.timeline-card::after {
+    content: none;
+}
+
+/* Mobile Styles for Profile-Timeline */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .profile-timeline .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-name {
+        font-size: 2rem;
+    }
+    
+    .profile-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .profile-description {
+        font-size: 0.95rem;
+    }
+    
+    .timeline-grid { grid-template-columns: 110px 60px 1fr; gap: 1rem 1.5rem; }
+    .timeline-grid::before { left: calc(110px + 30px); }
+    .timeline-marker { width: 60px; }
+    .timeline-logo { max-height: 48px; }
+    .timeline-card::before { content: none; }
+    .timeline-card::after { content: none; }
 }
 
 /* Research Section */
@@ -548,9 +708,13 @@ section {
 }
 
 @media (max-width: 480px) {
-    .profile-image {
-        width: 200px;
-        height: 200px;
+    .profile-timeline .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-name {
+        font-size: 1.8rem;
     }
 
     h1 {
