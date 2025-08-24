@@ -250,7 +250,7 @@ section {
 
 /* Combined Profile & Timeline Section */
 .profile-timeline {
-    padding: 80px 0 40px;
+    padding: 100px 0 60px;
     background: var(--bg-color);
     min-height: 100vh;
 }
@@ -260,12 +260,24 @@ section {
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border-color);
-    max-width: 800px;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    max-width: 600px; /* Smaller max-width to center the group */
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+
+.profile-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px; /* Match timeline width */
+    height: 1px;
+    background: var(--border-color);
+    max-width: 90vw; /* Responsive limit */
 }
 
 .profile-image-container {
@@ -308,6 +320,19 @@ section {
     line-height: 1.6;
 }
 
+.profile-tagline a,
+.profile-description a {
+    color: inherit; /* Use same color as parent text */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.profile-tagline a:hover,
+.profile-description a:hover {
+    text-decoration-thickness: 2px;
+}
+
 /* Timeline Section */
 .timeline { background: var(--section-bg); }
 
@@ -342,11 +367,11 @@ section {
     background-position: center top;
 }
 .timeline-year {
-    color: var(--text-light);
-    font-weight: 500;
+    color: var(--text-lighter);
+    font-weight: 400;
     padding-top: 0.4rem;
     white-space: nowrap;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .timeline-marker {
@@ -381,7 +406,24 @@ section {
     max-width: 600px; /* Constrain text width for better readability */
 }
 
-.timeline-card p { margin: 0; }
+.timeline-card p { 
+    margin: 0; 
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.timeline-card a {
+    color: inherit; /* Use same color as parent text */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.timeline-card a:hover {
+    text-decoration-thickness: 2px;
+}
 
 /* horizontal connector from vertical line to card */
 .timeline-card::before { content: none; }
