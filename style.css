@@ -471,6 +471,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .publication-card {
@@ -518,7 +520,7 @@ section {
 }
 
 .publication-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
     font-weight: 600;
@@ -526,7 +528,7 @@ section {
 
 .publication-authors {
     font-size: 1rem;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
@@ -540,7 +542,7 @@ section {
 }
 
 .publication-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--text-light);
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -554,23 +556,29 @@ section {
 
 .pub-link {
     padding: 0.5rem 1rem;
-    background: var(--primary-color);
-    color: white;
-    border-radius: 6px;
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .pub-link:hover {
-    background: var(--primary-hover);
+    background: var(--primary-color);
     color: white;
+    border-color: var(--primary-color);
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px var(--shadow-light);
 }
 
 .pub-link.disabled {
-    background: var(--text-lighter);
+    background: var(--section-bg);
+    color: var(--text-lighter);
+    border-color: var(--border-color);
     cursor: not-allowed;
+    transform: none;
 }
 
 /* Blogs Section */
@@ -582,6 +590,8 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .blog-card {
@@ -607,7 +617,7 @@ section {
 .blog-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -640,7 +650,7 @@ section {
 }
 
 .blog-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--text-light);
     line-height: 1.6;
 }
